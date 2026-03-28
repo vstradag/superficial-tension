@@ -4,6 +4,7 @@ import { GazeCanvasRenderer } from "./renderGazeCanvas.js";
 
 /** Mirror X: screen-left matches subject's left gaze in frame (camera vs viewer). */
 const FLIP_GAZE_X = true;
+const IDLE_ALIVE_MS = 380;
 
 /**
  * @param {HTMLElement} root
@@ -47,6 +48,7 @@ export async function mountEyeGaze(root, options = {}) {
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const resolveUrl = (path) => new URL(path, assetBase).href;
+  const aliveUrl = new URL("ALIVE.mp4", assetBase).href;
 
   const neutral = findNearestToOrigin(frames);
 
@@ -130,11 +132,58 @@ export async function mountEyeGaze(root, options = {}) {
   ro.observe(root);
 
   const pointer = createPointerState();
+  let lastMoveAt = performance.now();
+  let lastRawX = 0;
+  let lastRawY = 0;
+  const MOVE_EPS = 0.004;
+
+  const aliveVideo = document.createElement("video");
+  aliveVideo.src = aliveUrl;
+  aliveVideo.autoplay = true;
+  aliveVideo.defaultMuted = true;
+  aliveVideo.muted = true;
+  aliveVideo.loop = true;
+  aliveVideo.playsInline = true;
+  aliveVideo.setAttribute("muted", "");
+  aliveVideo.setAttribute("playsinline", "");
+  aliveVideo.setAttribute("autoplay", "");
+  aliveVideo.preload = "auto";
+  let aliveReady = false;
+  let alivePlayRequested = false;
+  let lastAliveTime = 0;
+  let staleAliveMs = 0;
+  let manualAliveTime = 0;
+  let lastLoopTs = performance.now();
+  aliveVideo.addEventListener("loadeddata", () => {
+    aliveReady = true;
+  });
+  aliveVideo.addEventListener("canplay", () => {
+    aliveReady = true;
+  });
+  // Force fetch/decode attempt now so idle draw has frames available.
+  aliveVideo.load();
+
+  const ensureAlivePlaying = () => {
+    if (aliveVideo.paused && !alivePlayRequested) {
+      alivePlayRequested = true;
+      aliveVideo.play().catch(() => {}).finally(() => {
+        alivePlayRequested = false;
+      });
+    }
+  };
 
   const onPointerClient = (/** @type {number} */ cx, /** @type {number} */ cy) => {
     const rect = root.getBoundingClientRect();
     const { x, y } = normalizeToRect(cx, cy, rect);
-    pointer.setRaw(x - calX, y - calY);
+    const nx = x - calX;
+    const ny = y - calY;
+    pointer.setRaw(nx, ny);
+    const moved = Math.abs(nx - lastRawX) > MOVE_EPS || Math.abs(ny - lastRawY) > MOVE_EPS;
+    if (moved) {
+      lastRawX = nx;
+      lastRawY = ny;
+      lastMoveAt = performance.now();
+    }
   };
 
   const onMouseMove = (/** @type {MouseEvent} */ e) => {
@@ -186,7 +235,33 @@ export async function mountEyeGaze(root, options = {}) {
   let rafId = 0;
   const loop = () => {
     rafId = window.requestAnimationFrame(loop);
+    const now = performance.now();
+    const dt = Math.min(100, now - lastLoopTs);
+    lastLoopTs = now;
     pointer.step();
+    const idle = performance.now() - lastMoveAt > IDLE_ALIVE_MS;
+    if (idle) {
+      ensureAlivePlaying();
+    }
+    if (idle && aliveReady) {
+      const t = aliveVideo.currentTime || 0;
+      if (Math.abs(t - lastAliveTime) < 0.0005) {
+        staleAliveMs += dt;
+      } else {
+        staleAliveMs = 0;
+      }
+      lastAliveTime = t;
+      // Fallback for autoplay-blocked contexts: scrub time manually while idle.
+      if (staleAliveMs > 250 && aliveVideo.duration > 0) {
+        manualAliveTime = (manualAliveTime + dt / 1000) % aliveVideo.duration;
+        aliveVideo.currentTime = manualAliveTime;
+      }
+      renderer.drawMedia(aliveVideo);
+      return;
+    }
+    if (!aliveVideo.paused) {
+      aliveVideo.pause();
+    }
     const sx = pointer.smoothed.x;
     const sy = pointer.smoothed.y;
     const gx = FLIP_GAZE_X ? -sx : sx;
@@ -202,6 +277,9 @@ export async function mountEyeGaze(root, options = {}) {
       touchSurface.removeEventListener("touchend", onTouchEnd);
       touchSurface.removeEventListener("touchmove", onTouchMove);
     }
+    aliveVideo.pause();
+    aliveVideo.removeAttribute("src");
+    aliveVideo.load();
     ro.disconnect();
   };
 }

@@ -147,4 +147,18 @@ export class GazeCanvasRenderer {
     this.ctx.clearRect(0, 0, lw, lh);
     this.ctx.drawImage(img, 0, 0, lw, lh);
   }
+
+  /**
+   * Draw external media (e.g. ALIVE.mp4) into the gaze canvas.
+   * @param {CanvasImageSource} media
+   */
+  drawMedia(media) {
+    const lw = this.logicalW;
+    const lh = this.logicalH;
+    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    this.ctx.globalCompositeOperation = "source-over";
+    this.ctx.clearRect(0, 0, lw, lh);
+    this.ctx.drawImage(media, 0, 0, lw, lh);
+  }
 }
