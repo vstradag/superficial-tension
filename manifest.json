@@ -11,7 +11,6 @@
     { "from": "UP", "to": "RIGHT", "file": "TOP-RIGHT.mp4" }
   ],
   "notes": [
-    "DOWN-RIGHT.mp4: frame extraction uses 0–3s only (bottom-right motion ends at 3s; remainder is different movement).",
     "Single-token filenames: movement from CENTER to that direction.",
     "Two tokens (e.g. DOWN-LEFT): from first direction to second (DOWN → LEFT).",
     "TOP-* uses node UP as the start (eyes already at top).",

@@ -20,17 +20,35 @@
           role="dialog"
           aria-labelledby="eyeGazeIntroTitle"
         >
-          <h1 id="eyeGazeIntroTitle" class="eye-gaze-intro__title">
-            Center your pointer
-          </h1>
-          <p class="eye-gaze-intro__text">
-            Place the cursor on the twinkling mark at the nose. After this screen,
-            keep it there to start; then move subtly. (Later this will use your
-            webcam gaze.)
-          </p>
-          <div class="eye-gaze-intro__mark-wrap">
-            <span class="eye-gaze-intro__mark" aria-hidden="true"></span>
+          <div class="eye-gaze-intro__copy">
+            <p
+              id="eyeGazeIntroTitle"
+              class="eye-gaze-intro__text"
+            >
+              A tribute to Rafael Lozano-Hemmer’s
+              <span lang="es">Tensión Superficial</span> (Superficial Tension).
+            </p>
           </div>
+          <p
+            id="eyeGazeIntroHint"
+            class="eye-gaze-intro__hint"
+          >
+            Click the tickling point to start
+          </p>
+          <button
+            type="button"
+            class="eye-gaze-intro__start"
+            data-eye-gaze-start
+            aria-describedby="eyeGazeIntroTitle eyeGazeIntroHint"
+          >
+            <span class="eye-gaze-intro__mark" aria-hidden="true"></span>
+            <span class="visually-hidden">Start — enter fullscreen</span>
+          </button>
+          <p class="eye-gaze-intro__footer">
+            Use the cursor to interact with the person’s face. She will follow
+            you.<br />
+            The view will go full screen.
+          </p>
         </div>
         <canvas
           class="eye-gaze-canvas"

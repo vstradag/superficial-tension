@@ -7,13 +7,80 @@ const FLIP_GAZE_X = true;
 const IDLE_ALIVE_MS = 380;
 
 /**
+ * Browsers require a user gesture; call from click only.
+ * @returns {Promise<void>}
+ */
+function requestFullscreenBestEffort() {
+  const el = document.documentElement;
+  const req =
+    el.requestFullscreen ||
+    el.webkitRequestFullscreen ||
+    el.msRequestFullscreen;
+  if (!req) return Promise.resolve();
+  try {
+    const p = req.call(el);
+    return p && typeof p.then === "function"
+      ? p.then(() => {}).catch(() => {})
+      : Promise.resolve();
+  } catch {
+    return Promise.resolve();
+  }
+}
+
+/**
+ * @param {HTMLElement} root
+ * @param {() => void} fit
+ * @param {Partial<{ introSelector: string, introHideMs: number }>} [options]
+ * @returns {Promise<{ calX: number, calY: number }>}
+ */
+function waitForIntroDismiss(root, fit, options = {}) {
+  const introEl = root.querySelector(
+    options.introSelector ?? "[data-eye-gaze-intro]"
+  );
+  const introHideMs = options.introHideMs ?? 560;
+  const startBtn = root.querySelector("[data-eye-gaze-start]");
+
+  if (!(introEl instanceof HTMLElement)) {
+    return Promise.resolve({ calX: 0, calY: 0 });
+  }
+  if (!(startBtn instanceof HTMLButtonElement)) {
+    introEl.classList.add("is-dismissing", "is-hidden");
+    return Promise.resolve({ calX: 0, calY: 0 });
+  }
+
+  return new Promise((resolve) => {
+    const onStart = async (e) => {
+      e.preventDefault();
+      startBtn.removeEventListener("click", onStart);
+      startBtn.disabled = true;
+      introEl.classList.add("is-dismissing");
+
+      await requestFullscreenBestEffort();
+      await new Promise((r) => requestAnimationFrame(r));
+      await new Promise((r) => requestAnimationFrame(r));
+      fit();
+
+      const r = root.getBoundingClientRect();
+      const cx = r.left + r.width / 2;
+      const cy = r.top + r.height / 2;
+      const n = normalizeToRect(cx, cy, r);
+
+      introEl.classList.add("is-hidden");
+      await new Promise((res) => setTimeout(res, introHideMs));
+      resolve({ calX: n.x, calY: n.y });
+    };
+    startBtn.addEventListener("click", onStart);
+  });
+}
+
+/**
  * @param {HTMLElement} root
  * @param {Partial<{
  *   framesIndexUrl: string,
  *   assetBase: string,
  *   canvasSelector: string,
  *   introSelector: string,
- *   introMs: number,
+ *   introHideMs: number,
  *   touchRoot: HTMLElement | null,
  *   deadZone: number,
  *   k: number,
@@ -63,19 +130,11 @@ export async function mountEyeGaze(root, options = {}) {
   const fit = () => renderer.fitToContainer(root);
   fit();
 
-  const introEl = root.querySelector(
-    options.introSelector ?? "[data-eye-gaze-intro]"
-  );
-  const introMs = options.introMs ?? 3000;
-  const introHideMs = 560;
-
   if (reduced) {
     await renderer.bootstrap(neutral);
     fit();
+    await waitForIntroDismiss(root, fit, options);
     renderer.drawSingleFrame(neutral);
-    if (introEl instanceof HTMLElement) {
-      introEl.classList.add("is-hidden");
-    }
     const ro = new ResizeObserver(() => {
       fit();
       renderer.drawSingleFrame(neutral);
@@ -88,45 +147,8 @@ export async function mountEyeGaze(root, options = {}) {
 
   await renderer.bootstrap(neutral);
 
-  /** Nose calibration: gaze (0,0) when pointer was at intro sample. */
-  let calX = 0;
-  let calY = 0;
-
-  const rectCenterClient = () => {
-    const r = root.getBoundingClientRect();
-    return { x: r.left + r.width / 2, y: r.top + r.height / 2 };
-  };
-
-  let lastClient = rectCenterClient();
-
-  const trackMouse = (/** @type {MouseEvent} */ e) => {
-    lastClient = { x: e.clientX, y: e.clientY };
-  };
-  const trackTouch = (/** @type {TouchEvent} */ e) => {
-    const t = e.touches[0];
-    if (t) lastClient = { x: t.clientX, y: t.clientY };
-  };
-
-  window.addEventListener("mousemove", trackMouse, { passive: true });
-  window.addEventListener("touchstart", trackTouch, { passive: true });
-  window.addEventListener("touchmove", trackTouch, { passive: true });
-
-  if (introEl instanceof HTMLElement) {
-    await new Promise((resolve) => setTimeout(resolve, introMs));
-    const r = root.getBoundingClientRect();
-    const n = normalizeToRect(lastClient.x, lastClient.y, r);
-    calX = n.x;
-    calY = n.y;
-    introEl.classList.add("is-hidden");
-    await new Promise((resolve) => setTimeout(resolve, introHideMs));
-  } else {
-    calX = 0;
-    calY = 0;
-  }
-
-  window.removeEventListener("mousemove", trackMouse);
-  window.removeEventListener("touchstart", trackTouch);
-  window.removeEventListener("touchmove", trackTouch);
+  /** Nose calibration: gaze (0,0) at screen center after start click + fullscreen. */
+  const { calX, calY } = await waitForIntroDismiss(root, fit, options);
 
   const ro = new ResizeObserver(() => fit());
   ro.observe(root);

@@ -1,5 +1,11 @@
-frames/out/
 # Legacy flat PNG dumps / stray clips under frames/ (pipeline uses frames/out/<clip>/)
 frames/frame_*.png
 frames/*.mp4
 .DS_Store
+
+# Stray / duplicate clips in repo root (not listed in manifest.json)
+DOWN-LEFT-.mp4
+DOWN-RIGHT-.mp4
+ElevenLabs*.mp4
+left_*.mp4
+rightM.mp4

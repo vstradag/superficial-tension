@@ -47,34 +47,18 @@ while IFS= read -r FILE; do
   CLIP_ID="${FILE%.mp4}"
   DEST="$OUT_ROOT/$CLIP_ID"
   mkdir -p "$DEST"
-  # DOWN-RIGHT.mp4: only the bottom-right movement (ends at t=3s); do not use later footage.
-  if [[ "$FILE" == "DOWN-RIGHT.mp4" ]]; then
-    echo "Extracting $FILE -> $DEST @ ${FPS}fps (first 3 seconds only)"
-    ffmpeg -y -hide_banner -loglevel error -i "$SRC" -t 3 \
-      -vf "fps=${FPS}" \
-      -q:v 3 \
-      "$DEST/frame_%05d.jpg"
-    REV_DEST="${DEST}__REV"
-    mkdir -p "$REV_DEST"
-    echo "Extracting $FILE -> $REV_DEST @ ${FPS}fps reversed (first 3 seconds only)"
-    ffmpeg -y -hide_banner -loglevel error -i "$SRC" -t 3 \
-      -vf "fps=${FPS},reverse" \
-      -q:v 3 \
-      "$REV_DEST/frame_%05d.jpg"
-  else
-    echo "Extracting $FILE -> $DEST @ ${FPS}fps"
-    ffmpeg -y -hide_banner -loglevel error -i "$SRC" \
-      -vf "fps=${FPS}" \
-      -q:v 3 \
-      "$DEST/frame_%05d.jpg"
-    REV_DEST="${DEST}__REV"
-    mkdir -p "$REV_DEST"
-    echo "Extracting $FILE -> $REV_DEST @ ${FPS}fps reversed"
-    ffmpeg -y -hide_banner -loglevel error -i "$SRC" \
-      -vf "fps=${FPS},reverse" \
-      -q:v 3 \
-      "$REV_DEST/frame_%05d.jpg"
-  fi
+  echo "Extracting $FILE -> $DEST @ ${FPS}fps"
+  ffmpeg -y -hide_banner -loglevel error -i "$SRC" \
+    -vf "fps=${FPS}" \
+    -q:v 3 \
+    "$DEST/frame_%05d.jpg"
+  REV_DEST="${DEST}__REV"
+  mkdir -p "$REV_DEST"
+  echo "Extracting $FILE -> $REV_DEST @ ${FPS}fps reversed"
+  ffmpeg -y -hide_banner -loglevel error -i "$SRC" \
+    -vf "fps=${FPS},reverse" \
+    -q:v 3 \
+    "$REV_DEST/frame_%05d.jpg"
 done <<< "$FILES_JSON"
 
 echo "Done. Run: npm run build-index"
