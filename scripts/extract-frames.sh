@@ -46,18 +46,19 @@ while IFS= read -r FILE; do
   DEST="$OUT_ROOT/$CLIP_ID"
   mkdir -p "$DEST"
   # DOWN-RIGHT.mp4: only the bottom-right movement (ends at t=3s); do not use later footage.
-  EXTRA=()
   if [[ "$FILE" == "DOWN-RIGHT.mp4" ]]; then
-    EXTRA=(-t 3)
     echo "Extracting $FILE -> $DEST @ ${FPS}fps (first 3 seconds only)"
+    ffmpeg -y -hide_banner -loglevel error -i "$SRC" -t 3 \
+      -vf "fps=${FPS}" \
+      -q:v 3 \
+      "$DEST/frame_%05d.jpg"
   else
     echo "Extracting $FILE -> $DEST @ ${FPS}fps"
+    ffmpeg -y -hide_banner -loglevel error -i "$SRC" \
+      -vf "fps=${FPS}" \
+      -q:v 3 \
+      "$DEST/frame_%05d.jpg"
   fi
-  ffmpeg -y -hide_banner -loglevel error -i "$SRC" \
-    "${EXTRA[@]}" \
-    -vf "fps=${FPS}" \
-    -q:v 3 \
-    "$DEST/frame_%05d.jpg"
 done <<< "$FILES_JSON"
 
 echo "Done. Run: npm run build-index"
