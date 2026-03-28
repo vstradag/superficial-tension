@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Superficial tension — eye gaze</title>
+    <link rel="stylesheet" href="./css/eye-gaze.css" />
+  </head>
+  <body>
+    <main class="page page--full">
+      <section
+        id="eyeGazeRoot"
+        class="eye-gaze-root"
+        aria-label="Interactive gaze"
+      >
+        <div
+          id="eyeGazeIntro"
+          class="eye-gaze-intro"
+          data-eye-gaze-intro
+          role="dialog"
+          aria-labelledby="eyeGazeIntroTitle"
+        >
+          <h1 id="eyeGazeIntroTitle" class="eye-gaze-intro__title">
+            Center your pointer
+          </h1>
+          <p class="eye-gaze-intro__text">
+            Place the cursor on the twinkling mark at the nose. After this screen,
+            keep it there to start; then move subtly. (Later this will use your
+            webcam gaze.)
+          </p>
+          <div class="eye-gaze-intro__mark-wrap">
+            <span class="eye-gaze-intro__mark" aria-hidden="true"></span>
+          </div>
+        </div>
+        <canvas
+          class="eye-gaze-canvas"
+          data-eye-gaze-canvas
+          width="800"
+          height="500"
+        ></canvas>
+      </section>
+    </main>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

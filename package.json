@@ -1,0 +1,9 @@
+{
+  "name": "superficial-tension-gaze",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "extract": "bash scripts/extract-frames.sh",
+    "build-index": "node scripts/build-frames-index.mjs"
+  }
+}

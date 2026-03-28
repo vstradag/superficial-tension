@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gaze frame coverage (debug)</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 0;
+        padding: 12px;
+        background: #111;
+        color: #eee;
+      }
+      #plot {
+        display: block;
+        width: min(90vw, 560px);
+        height: min(90vw, 560px);
+        background: #1a1a1e;
+        border-radius: 8px;
+        cursor: crosshair;
+      }
+      #preview {
+        max-width: 240px;
+        max-height: 240px;
+        border-radius: 8px;
+        margin-top: 8px;
+      }
+      .meta {
+        margin-top: 8px;
+        font-size: 13px;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gaze (gx, gy) coverage</h1>
+    <p class="meta">
+      Hover the plot. Dots are indexed frames; axes [-1,1] with Y up. Serve via HTTP
+      (same as main app).
+    </p>
+    <canvas id="plot" width="560" height="560"></canvas>
+    <div><img id="preview" alt="Frame preview" /></div>
+    <p id="label" class="meta"></p>
+    <script type="module" src="./js/debug-viewer.js"></script>
+  </body>
+</html>

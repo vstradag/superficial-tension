@@ -1,0 +1,60 @@
+{
+  "description": "Directed pairs with no path in manifest.json (add clips or accept hold behavior).",
+  "unreachableDirectedPairs": [
+    {
+      "from": "LEFT",
+      "to": "CENTER"
+    },
+    {
+      "from": "LEFT",
+      "to": "RIGHT"
+    },
+    {
+      "from": "LEFT",
+      "to": "UP"
+    },
+    {
+      "from": "LEFT",
+      "to": "DOWN"
+    },
+    {
+      "from": "RIGHT",
+      "to": "CENTER"
+    },
+    {
+      "from": "RIGHT",
+      "to": "LEFT"
+    },
+    {
+      "from": "RIGHT",
+      "to": "UP"
+    },
+    {
+      "from": "RIGHT",
+      "to": "DOWN"
+    },
+    {
+      "from": "UP",
+      "to": "CENTER"
+    },
+    {
+      "from": "UP",
+      "to": "DOWN"
+    },
+    {
+      "from": "DOWN",
+      "to": "CENTER"
+    },
+    {
+      "from": "DOWN",
+      "to": "UP"
+    }
+  ],
+  "count": 12,
+  "recommendations": [
+    "LEFT and RIGHT have no outgoing edges: once a CENTER→LEFT/RIGHT clip finishes, the graph cannot reach other nodes. Add clips such as LEFT→CENTER, RIGHT→CENTER, or diagonal returns.",
+    "UP and DOWN cannot reach CENTER without a dedicated clip; add UP→CENTER and DOWN→CENTER (or a neutral CENTER idle) for returning to mid gaze.",
+    "UP and DOWN cannot reach each other directly; add UP→DOWN / DOWN→UP or route via CENTER if you add center-return clips.",
+    "Map or remove ambiguous files (rightM.mp4, video1–7.mp4) in manifest.json once their start/end poses are defined."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "nodes": ["CENTER", "LEFT", "RIGHT", "UP", "DOWN"],
+  "edges": [
+    { "from": "CENTER", "to": "LEFT", "file": "LEFT.mp4" },
+    { "from": "CENTER", "to": "RIGHT", "file": "RIGHT.mp4" },
+    { "from": "CENTER", "to": "DOWN", "file": "DOWN.mp4" },
+    { "from": "CENTER", "to": "UP", "file": "UP.mp4" },
+    { "from": "DOWN", "to": "LEFT", "file": "DOWN-LEFT.mp4" },
+    { "from": "DOWN", "to": "RIGHT", "file": "DOWN-RIGHT.mp4" },
+    { "from": "UP", "to": "LEFT", "file": "TOP-LEFT.mp4" },
+    { "from": "UP", "to": "RIGHT", "file": "TOP-RIGHT.mp4" }
+  ],
+  "notes": [
+    "DOWN-RIGHT.mp4: frame extraction uses 0–3s only (bottom-right motion ends at 3s; remainder is different movement).",
+    "Single-token filenames: movement from CENTER to that direction.",
+    "Two tokens (e.g. DOWN-LEFT): from first direction to second (DOWN → LEFT).",
+    "TOP-* uses node UP as the start (eyes already at top).",
+    "rightM.mp4 and video1–7.mp4 are not mapped; add edges if you standardize their names.",
+    "Optional duplicate: rightM.mp4 may be CENTER→RIGHT — use RIGHT.mp4 as canonical."
+  ]
+}
