@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # Extract frames from all clips listed in manifest.json at a fixed rate (24 fps).
-# Output: frames/out/<clipId>/frame_%05d.jpg (MJPEG quality ~q:v 3)
+# Output:
+#   frames/out/<clipId>/frame_%05d.jpg
+#   frames/out/<clipId>__REV/frame_%05d.jpg   (same clip reversed in time)
 #
 # Requires: ffmpeg
 # Usage: from repo root — bash scripts/extract-frames.sh
@@ -52,12 +54,26 @@ while IFS= read -r FILE; do
       -vf "fps=${FPS}" \
       -q:v 3 \
       "$DEST/frame_%05d.jpg"
+    REV_DEST="${DEST}__REV"
+    mkdir -p "$REV_DEST"
+    echo "Extracting $FILE -> $REV_DEST @ ${FPS}fps reversed (first 3 seconds only)"
+    ffmpeg -y -hide_banner -loglevel error -i "$SRC" -t 3 \
+      -vf "fps=${FPS},reverse" \
+      -q:v 3 \
+      "$REV_DEST/frame_%05d.jpg"
   else
     echo "Extracting $FILE -> $DEST @ ${FPS}fps"
     ffmpeg -y -hide_banner -loglevel error -i "$SRC" \
       -vf "fps=${FPS}" \
       -q:v 3 \
       "$DEST/frame_%05d.jpg"
+    REV_DEST="${DEST}__REV"
+    mkdir -p "$REV_DEST"
+    echo "Extracting $FILE -> $REV_DEST @ ${FPS}fps reversed"
+    ffmpeg -y -hide_banner -loglevel error -i "$SRC" \
+      -vf "fps=${FPS},reverse" \
+      -q:v 3 \
+      "$REV_DEST/frame_%05d.jpg"
   fi
 done <<< "$FILES_JSON"
 

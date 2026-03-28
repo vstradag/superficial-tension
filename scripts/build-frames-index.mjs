@@ -34,38 +34,59 @@ function main() {
   for (const edge of manifest.edges) {
     const file = edge.file;
     const fileBase = file.replace(/\.mp4$/i, "");
-    const dir = join(ROOT, "frames", "out", fileBase);
-    let names = [];
-    try {
-      names = readdirSync(dir).filter((n) => /\.(jpe?g|webp|png)$/i.test(n));
-    } catch {
-      console.warn(`Missing frames dir (run npm run extract): ${dir}`);
-      continue;
-    }
-    names.sort();
+    const variants = [
+      {
+        dirBase: fileBase,
+        fromKey: edge.from,
+        toKey: edge.to,
+        clipName: fileBase,
+      },
+      {
+        dirBase: `${fileBase}__REV`,
+        fromKey: edge.to,
+        toKey: edge.from,
+        clipName: `${fileBase}__REV`,
+      },
+    ];
 
-    const fromKey = edge.from;
-    const toKey = edge.to;
-    if (!NODE_VEC[fromKey] || !NODE_VEC[toKey]) {
-      console.warn(`Unknown node in edge: ${fromKey} -> ${toKey}`);
-      continue;
-    }
-    const v0 = NODE_VEC[fromKey];
-    const v1 = NODE_VEC[toKey];
-    const N = names.length;
-    if (N === 0) continue;
+    for (const variant of variants) {
+      const dir = join(ROOT, "frames", "out", variant.dirBase);
+      let names = [];
+      try {
+        names = readdirSync(dir).filter((n) => /\.(jpe?g|webp|png)$/i.test(n));
+      } catch {
+        if (variant.dirBase.endsWith("__REV")) continue;
+        console.warn(`Missing frames dir (run npm run extract): ${dir}`);
+        continue;
+      }
+      names.sort();
 
-    for (let i = 0; i < N; i++) {
-      const t = N === 1 ? 0 : i / (N - 1);
-      const [gx, gy] = lerp2(v0, v1, t);
-      const relPath = `frames/out/${fileBase}/${names[i]}`.replace(/\\/g, "/");
-      frames.push({
-        path: relPath,
-        gx,
-        gy,
-        clip: fileBase,
-        frame: i + 1,
-      });
+      const fromKey = variant.fromKey;
+      const toKey = variant.toKey;
+      if (!NODE_VEC[fromKey] || !NODE_VEC[toKey]) {
+        console.warn(`Unknown node in edge: ${fromKey} -> ${toKey}`);
+        continue;
+      }
+      const v0 = NODE_VEC[fromKey];
+      const v1 = NODE_VEC[toKey];
+      const N = names.length;
+      if (N === 0) continue;
+
+      for (let i = 0; i < N; i++) {
+        const t = N === 1 ? 0 : i / (N - 1);
+        const [gx, gy] = lerp2(v0, v1, t);
+        const relPath = `frames/out/${variant.dirBase}/${names[i]}`.replace(
+          /\\/g,
+          "/"
+        );
+        frames.push({
+          path: relPath,
+          gx,
+          gy,
+          clip: variant.clipName,
+          frame: i + 1,
+        });
+      }
     }
   }
 
