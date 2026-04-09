@@ -11,6 +11,8 @@ python3 -m http.server 8080
 
 Open http://localhost:8080/
 
+**Idle vs. interaction:** When the pointer is still for a short moment, the canvas shows **`CENTER.png`** (static). While you move the pointer, the app blends **JPG frames** extracted from your source clips — that motion can look “video-like” but it is **not** the old `ALIVE.mp4` loop. If you still see old behavior, hard-refresh or bump the `?v=` on the script tag in `index.html` (browsers cache ES modules aggressively). After deploying or syncing to another site, load the new `index.html` + `js/app.js`.
+
 ## Deploy on Vercel (static)
 
 1. Push this repo to GitHub (include `frames/out/` — required at runtime).
