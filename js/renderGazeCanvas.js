@@ -49,11 +49,17 @@ export class GazeCanvasRenderer {
     this.ctx = /** @type {CanvasRenderingContext2D} */ (
       this.canvas.getContext("2d", { alpha: false })
     );
+    /** Compositing buffer so the visible canvas updates in one blit (reduces perceived flicker). */
+    this._composite = document.createElement("canvas");
+    this._cctx = /** @type {CanvasRenderingContext2D} */ (
+      this._composite.getContext("2d", { alpha: false })
+    );
     this.frames = opts.frames;
     this.resolveUrl = opts.resolveUrl;
     this.k = opts.k ?? 4;
     this.deadZone = opts.deadZone ?? 0.08;
-    this.blendLerp = opts.blendLerp ?? 0.22;
+    /** Lower = slower cross-fade between neighbor sets (less strobing when the pointer moves). */
+    this.blendLerp = opts.blendLerp ?? 0.12;
     this.cache = new ImageLRU({ maxEntries: opts.cacheSize ?? 56 });
 
     /** @type {{ entry: FrameEntry, weight: number }[]} */
@@ -100,20 +106,33 @@ export class GazeCanvasRenderer {
     const lw = this.logicalW;
     const lh = this.logicalH;
     const layers = [];
+    let missing = false;
     for (const { entry, weight } of this.blendState) {
       if (weight < 0.002) continue;
-      let img = this.cache.getLoaded(entry.path);
+      const img = this.cache.getLoaded(entry.path);
       if (!img) {
         this.cache.load(entry.path, this.resolveUrl(entry.path)).catch(() => {});
+        missing = true;
         continue;
       }
       layers.push({ img, weight });
     }
     if (layers.length === 0) return;
+    // Additive "lighter" blend: skipping a layer collapses total energy → visible flash. Keep last frame.
+    if (missing) return;
 
     const dpr = Math.min(2, window.devicePixelRatio || 1);
-    this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    drawWeightedBlend(this.ctx, lw, lh, layers);
+    if (
+      this._composite.width !== this.canvas.width ||
+      this._composite.height !== this.canvas.height
+    ) {
+      this._composite.width = this.canvas.width;
+      this._composite.height = this.canvas.height;
+    }
+    this._cctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    drawWeightedBlend(this._cctx, lw, lh, layers);
+    this.ctx.setTransform(1, 0, 0, 1, 0, 0);
+    this.ctx.drawImage(this._composite, 0, 0);
   }
 
   /**
@@ -130,6 +149,8 @@ export class GazeCanvasRenderer {
     this.canvas.style.height = `${cssH}px`;
     this.canvas.width = Math.floor(cssW * dpr);
     this.canvas.height = Math.floor(cssH * dpr);
+    this._composite.width = this.canvas.width;
+    this._composite.height = this.canvas.height;
     this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
 

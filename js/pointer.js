@@ -40,8 +40,8 @@ export function createPointerState(opts = {}) {
   const raw = { x: 0, y: 0 };
   const smoothed = { x: 0, y: 0 };
   let interpolation = {
-    x: opts.interpolationX ?? 0.15,
-    y: opts.interpolationY ?? 0.25,
+    x: opts.interpolationX ?? 0.09,
+    y: opts.interpolationY ?? 0.11,
   };
 
   return {
@@ -66,7 +66,10 @@ export function createPointerState(opts = {}) {
         raw.y = 0;
         interpolation = { x: 0.04, y: 0.04 };
         window.setTimeout(() => {
-          interpolation = { x: 0.15, y: 0.25 };
+          interpolation = {
+            x: opts.interpolationX ?? 0.09,
+            y: opts.interpolationY ?? 0.11,
+          };
         }, 1000);
       }, 2000);
     },

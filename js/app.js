@@ -84,6 +84,9 @@ function waitForIntroDismiss(root, fit, options = {}) {
  *   touchRoot: HTMLElement | null,
  *   deadZone: number,
  *   k: number,
+ *   blendLerp: number,
+ *   interpolationX: number,
+ *   interpolationY: number,
  * }>} [options]
  */
 export async function mountEyeGaze(root, options = {}) {
@@ -125,6 +128,7 @@ export async function mountEyeGaze(root, options = {}) {
     resolveUrl,
     k: options.k ?? 4,
     deadZone: options.deadZone ?? 0.08,
+    blendLerp: options.blendLerp,
   });
 
   const fit = () => renderer.fitToContainer(root);
@@ -153,7 +157,10 @@ export async function mountEyeGaze(root, options = {}) {
   const ro = new ResizeObserver(() => fit());
   ro.observe(root);
 
-  const pointer = createPointerState();
+  const pointer = createPointerState({
+    interpolationX: options.interpolationX,
+    interpolationY: options.interpolationY,
+  });
   let lastMoveAt = performance.now();
   let lastRawX = 0;
   let lastRawY = 0;
