@@ -4,7 +4,8 @@ import { GazeCanvasRenderer } from "./renderGazeCanvas.js";
 
 /** Mirror X: screen-left matches subject's left gaze in frame (camera vs viewer). */
 const FLIP_GAZE_X = true;
-const IDLE_ALIVE_MS = 380;
+/** Time without pointer movement before showing static idle (CENTER.png). */
+const IDLE_STATIC_MS = 380;
 
 /**
  * Browsers require a user gesture; call from click only.
@@ -118,9 +119,20 @@ export async function mountEyeGaze(root, options = {}) {
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const resolveUrl = (path) => new URL(path, assetBase).href;
-  const aliveUrl = new URL("ALIVE.mp4", assetBase).href;
 
   const neutral = findNearestToOrigin(frames);
+
+  /** Static neutral face when pointer is idle (replaces ALIVE.mp4 for stability). */
+  const idleImageUrl = new URL("CENTER.png", assetBase).href;
+  const loadIdleImage = (url) =>
+    new Promise((resolve, reject) => {
+      const img = new Image();
+      img.decoding = "async";
+      img.onload = () => resolve(img);
+      img.onerror = () =>
+        reject(new Error(`Failed to load idle image: ${url}`));
+      img.src = url;
+    });
 
   const renderer = new GazeCanvasRenderer({
     canvas,
@@ -150,6 +162,7 @@ export async function mountEyeGaze(root, options = {}) {
   }
 
   await renderer.bootstrap(neutral);
+  const idleImage = await loadIdleImage(idleImageUrl);
 
   /** Nose calibration: gaze (0,0) at screen center after start click + fullscreen. */
   const { calX, calY } = await waitForIntroDismiss(root, fit, options);
@@ -165,41 +178,6 @@ export async function mountEyeGaze(root, options = {}) {
   let lastRawX = 0;
   let lastRawY = 0;
   const MOVE_EPS = 0.004;
-
-  const aliveVideo = document.createElement("video");
-  aliveVideo.src = aliveUrl;
-  aliveVideo.autoplay = true;
-  aliveVideo.defaultMuted = true;
-  aliveVideo.muted = true;
-  aliveVideo.loop = true;
-  aliveVideo.playsInline = true;
-  aliveVideo.setAttribute("muted", "");
-  aliveVideo.setAttribute("playsinline", "");
-  aliveVideo.setAttribute("autoplay", "");
-  aliveVideo.preload = "auto";
-  let aliveReady = false;
-  let alivePlayRequested = false;
-  let lastAliveTime = 0;
-  let staleAliveMs = 0;
-  let manualAliveTime = 0;
-  let lastLoopTs = performance.now();
-  aliveVideo.addEventListener("loadeddata", () => {
-    aliveReady = true;
-  });
-  aliveVideo.addEventListener("canplay", () => {
-    aliveReady = true;
-  });
-  // Force fetch/decode attempt now so idle draw has frames available.
-  aliveVideo.load();
-
-  const ensureAlivePlaying = () => {
-    if (aliveVideo.paused && !alivePlayRequested) {
-      alivePlayRequested = true;
-      aliveVideo.play().catch(() => {}).finally(() => {
-        alivePlayRequested = false;
-      });
-    }
-  };
 
   const onPointerClient = (/** @type {number} */ cx, /** @type {number} */ cy) => {
     const rect = root.getBoundingClientRect();
@@ -264,32 +242,11 @@ export async function mountEyeGaze(root, options = {}) {
   let rafId = 0;
   const loop = () => {
     rafId = window.requestAnimationFrame(loop);
-    const now = performance.now();
-    const dt = Math.min(100, now - lastLoopTs);
-    lastLoopTs = now;
     pointer.step();
-    const idle = performance.now() - lastMoveAt > IDLE_ALIVE_MS;
+    const idle = performance.now() - lastMoveAt > IDLE_STATIC_MS;
     if (idle) {
-      ensureAlivePlaying();
-    }
-    if (idle && aliveReady) {
-      const t = aliveVideo.currentTime || 0;
-      if (Math.abs(t - lastAliveTime) < 0.0005) {
-        staleAliveMs += dt;
-      } else {
-        staleAliveMs = 0;
-      }
-      lastAliveTime = t;
-      // Fallback for autoplay-blocked contexts: scrub time manually while idle.
-      if (staleAliveMs > 250 && aliveVideo.duration > 0) {
-        manualAliveTime = (manualAliveTime + dt / 1000) % aliveVideo.duration;
-        aliveVideo.currentTime = manualAliveTime;
-      }
-      renderer.drawMedia(aliveVideo);
+      renderer.drawMedia(idleImage);
       return;
-    }
-    if (!aliveVideo.paused) {
-      aliveVideo.pause();
     }
     const sx = pointer.smoothed.x;
     const sy = pointer.smoothed.y;
@@ -306,9 +263,6 @@ export async function mountEyeGaze(root, options = {}) {
       touchSurface.removeEventListener("touchend", onTouchEnd);
       touchSurface.removeEventListener("touchmove", onTouchMove);
     }
-    aliveVideo.pause();
-    aliveVideo.removeAttribute("src");
-    aliveVideo.load();
     ro.disconnect();
   };
 }

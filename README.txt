@@ -12,7 +12,7 @@
 A. Prepare superficialTension as a deployable site
 Confirm it runs locally as static files (e.g. python3 -m http.server from the project root, open index.html). Fix anything that breaks before deploying.
 
-Ensure production assets exist in that folder: index.html, css/, js/, frames-index.json, frames/out/…, ALIVE.mp4, etc. (whatever your app actually loads). If you use the extract pipeline, run your usual extract + build-index before deploy.
+Ensure production assets exist in that folder: index.html, css/, js/, frames-index.json, frames/out/…, CENTER.png (idle static), etc. (whatever your app actually loads). If you use the extract pipeline, run your usual extract + build-index before deploy.
 
 Put the project in Git (if it isn’t already): git init, .gitignore for junk (you may still ignore huge folders if you use another strategy; for a full static deploy you usually commit the frames you need).
 

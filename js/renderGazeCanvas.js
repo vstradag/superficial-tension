@@ -170,7 +170,7 @@ export class GazeCanvasRenderer {
   }
 
   /**
-   * Draw external media (e.g. ALIVE.mp4) into the gaze canvas.
+   * Draw external media (video or image) into the gaze canvas (idle state).
    * @param {CanvasImageSource} media
    */
   drawMedia(media) {
