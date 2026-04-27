@@ -26,10 +26,70 @@ function drawWeightedBlend(ctx, lw, lh, layers) {
   for (const { img, weight } of layers) {
     if (weight <= 0) continue;
     ctx.globalAlpha = weight;
-    ctx.drawImage(img, 0, 0, lw, lh);
+    drawCover(ctx, img, lw, lh);
   }
   ctx.globalCompositeOperation = "source-over";
   ctx.globalAlpha = 1;
+}
+
+/**
+ * @param {CanvasImageSource} media
+ * @returns {{ width: number, height: number } | null}
+ */
+function getMediaSize(media) {
+  if (media instanceof HTMLImageElement) {
+    return media.naturalWidth && media.naturalHeight
+      ? { width: media.naturalWidth, height: media.naturalHeight }
+      : null;
+  }
+  if (media instanceof HTMLVideoElement) {
+    return media.videoWidth && media.videoHeight
+      ? { width: media.videoWidth, height: media.videoHeight }
+      : null;
+  }
+  if (media instanceof HTMLCanvasElement) {
+    return { width: media.width, height: media.height };
+  }
+  if (typeof ImageBitmap !== "undefined" && media instanceof ImageBitmap) {
+    return { width: media.width, height: media.height };
+  }
+  if (
+    typeof OffscreenCanvas !== "undefined" &&
+    media instanceof OffscreenCanvas
+  ) {
+    return { width: media.width, height: media.height };
+  }
+  return null;
+}
+
+/**
+ * Draw media using `object-fit: cover` semantics so mixed source aspect ratios
+ * (e.g. 3:2 CENTER.png vs 16:9 extracted frames) align consistently.
+ * @param {CanvasRenderingContext2D} ctx
+ * @param {CanvasImageSource} media
+ * @param {number} lw
+ * @param {number} lh
+ */
+function drawCover(ctx, media, lw, lh) {
+  const size = getMediaSize(media);
+  if (!size) return;
+  const srcAspect = size.width / Math.max(1, size.height);
+  const dstAspect = lw / Math.max(1, lh);
+
+  let sx = 0;
+  let sy = 0;
+  let sw = size.width;
+  let sh = size.height;
+
+  if (srcAspect > dstAspect) {
+    sw = Math.round(size.height * dstAspect);
+    sx = Math.round((size.width - sw) / 2);
+  } else if (srcAspect < dstAspect) {
+    sh = Math.round(size.width / dstAspect);
+    sy = Math.round((size.height - sh) / 2);
+  }
+
+  ctx.drawImage(media, sx, sy, sw, sh, 0, 0, lw, lh);
 }
 
 export class GazeCanvasRenderer {
@@ -91,6 +151,18 @@ export class GazeCanvasRenderer {
   drawFrame(sx, sy) {
     if (!this.ready) return;
     const { x: tx, y: ty } = applyDeadZone(sx, sy, this.deadZone);
+    if (this.k <= 1) {
+      const nearest = findKNearest(this.frames, tx, ty, 1)[0];
+      if (!nearest) return;
+      const exact = this.cache.getLoaded(nearest.entry.path);
+      if (!exact) {
+        this.cache.load(nearest.entry.path, this.resolveUrl(nearest.entry.path)).catch(() => {});
+        return;
+      }
+      this.blendState = [{ entry: nearest.entry, weight: 1 }];
+      this.drawSingleFrame(nearest.entry);
+      return;
+    }
     const neigh = findKNearest(this.frames, tx, ty, this.k);
     const weighted = idwWeights(neigh);
     const target = weighted.map(({ entry, weight }) => ({ entry, weight }));
@@ -166,7 +238,9 @@ export class GazeCanvasRenderer {
     this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     this.ctx.globalCompositeOperation = "source-over";
     this.ctx.clearRect(0, 0, lw, lh);
-    this.ctx.drawImage(img, 0, 0, lw, lh);
+    this.ctx.fillStyle = "#000";
+    this.ctx.fillRect(0, 0, lw, lh);
+    drawCover(this.ctx, img, lw, lh);
   }
 
   /**
@@ -180,6 +254,8 @@ export class GazeCanvasRenderer {
     this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     this.ctx.globalCompositeOperation = "source-over";
     this.ctx.clearRect(0, 0, lw, lh);
-    this.ctx.drawImage(media, 0, 0, lw, lh);
+    this.ctx.fillStyle = "#000";
+    this.ctx.fillRect(0, 0, lw, lh);
+    drawCover(this.ctx, media, lw, lh);
   }
 }

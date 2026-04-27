@@ -4,8 +4,8 @@ import { GazeCanvasRenderer } from "./renderGazeCanvas.js";
 
 /** Mirror X: screen-left matches subject's left gaze in frame (camera vs viewer). */
 const FLIP_GAZE_X = true;
-/** Time without pointer movement before showing static idle (CENTER.png). */
-const IDLE_STATIC_MS = 380;
+/** Short delay before freezing the last rendered gaze frame. */
+const IDLE_HOLD_MS = 140;
 
 /**
  * Browsers require a user gesture; call from click only.
@@ -122,23 +122,11 @@ export async function mountEyeGaze(root, options = {}) {
 
   const neutral = findNearestToOrigin(frames);
 
-  /** Static neutral face when pointer is idle (replaces ALIVE.mp4 for stability). */
-  const idleImageUrl = new URL("CENTER.png", assetBase).href;
-  const loadIdleImage = (url) =>
-    new Promise((resolve, reject) => {
-      const img = new Image();
-      img.decoding = "async";
-      img.onload = () => resolve(img);
-      img.onerror = () =>
-        reject(new Error(`Failed to load idle image: ${url}`));
-      img.src = url;
-    });
-
   const renderer = new GazeCanvasRenderer({
     canvas,
     frames,
     resolveUrl,
-    k: options.k ?? 4,
+    k: options.k ?? 1,
     deadZone: options.deadZone ?? 0.08,
     blendLerp: options.blendLerp,
   });
@@ -162,7 +150,6 @@ export async function mountEyeGaze(root, options = {}) {
   }
 
   await renderer.bootstrap(neutral);
-  const idleImage = await loadIdleImage(idleImageUrl);
 
   /** Nose calibration: gaze (0,0) at screen center after start click + fullscreen. */
   const { calX, calY } = await waitForIntroDismiss(root, fit, options);
@@ -177,16 +164,17 @@ export async function mountEyeGaze(root, options = {}) {
   let lastMoveAt = performance.now();
   let lastRawX = 0;
   let lastRawY = 0;
-  const MOVE_EPS = 0.004;
+  /** Ignore tiny mouse jitter so idle can reliably engage. */
+  const MOVE_EPS = 0.008;
 
   const onPointerClient = (/** @type {number} */ cx, /** @type {number} */ cy) => {
     const rect = root.getBoundingClientRect();
     const { x, y } = normalizeToRect(cx, cy, rect);
     const nx = x - calX;
     const ny = y - calY;
-    pointer.setRaw(nx, ny);
     const moved = Math.abs(nx - lastRawX) > MOVE_EPS || Math.abs(ny - lastRawY) > MOVE_EPS;
     if (moved) {
+      pointer.setRaw(nx, ny);
       lastRawX = nx;
       lastRawY = ny;
       lastMoveAt = performance.now();
@@ -242,12 +230,12 @@ export async function mountEyeGaze(root, options = {}) {
   let rafId = 0;
   const loop = () => {
     rafId = window.requestAnimationFrame(loop);
-    pointer.step();
-    const idle = performance.now() - lastMoveAt > IDLE_STATIC_MS;
+    const idle = performance.now() - lastMoveAt > IDLE_HOLD_MS;
     if (idle) {
-      renderer.drawMedia(idleImage);
+      // Hold the exact frame that was last rendered when movement stopped.
       return;
     }
+    pointer.step();
     const sx = pointer.smoothed.x;
     const sy = pointer.smoothed.y;
     const gx = FLIP_GAZE_X ? -sx : sx;

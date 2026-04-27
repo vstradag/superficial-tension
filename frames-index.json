@@ -12,675 +12,668 @@
     },
     {
       "path": "frames/out/LEFT/frame_00002.jpg",
-      "gx": -0.010416666666666666,
+      "gx": -0.010526315789473684,
       "gy": 0,
       "clip": "LEFT",
       "frame": 2
     },
     {
       "path": "frames/out/LEFT/frame_00003.jpg",
-      "gx": -0.020833333333333332,
+      "gx": -0.021052631578947368,
       "gy": 0,
       "clip": "LEFT",
       "frame": 3
     },
     {
       "path": "frames/out/LEFT/frame_00004.jpg",
-      "gx": -0.03125,
+      "gx": -0.031578947368421054,
       "gy": 0,
       "clip": "LEFT",
       "frame": 4
     },
     {
       "path": "frames/out/LEFT/frame_00005.jpg",
-      "gx": -0.041666666666666664,
+      "gx": -0.042105263157894736,
       "gy": 0,
       "clip": "LEFT",
       "frame": 5
     },
     {
       "path": "frames/out/LEFT/frame_00006.jpg",
-      "gx": -0.052083333333333336,
+      "gx": -0.05263157894736842,
       "gy": 0,
       "clip": "LEFT",
       "frame": 6
     },
     {
       "path": "frames/out/LEFT/frame_00007.jpg",
-      "gx": -0.0625,
+      "gx": -0.06315789473684211,
       "gy": 0,
       "clip": "LEFT",
       "frame": 7
     },
     {
       "path": "frames/out/LEFT/frame_00008.jpg",
-      "gx": -0.07291666666666667,
+      "gx": -0.07368421052631578,
       "gy": 0,
       "clip": "LEFT",
       "frame": 8
     },
     {
       "path": "frames/out/LEFT/frame_00009.jpg",
-      "gx": -0.08333333333333333,
+      "gx": -0.08421052631578947,
       "gy": 0,
       "clip": "LEFT",
       "frame": 9
     },
     {
       "path": "frames/out/LEFT/frame_00010.jpg",
-      "gx": -0.09375,
+      "gx": -0.09473684210526316,
       "gy": 0,
       "clip": "LEFT",
       "frame": 10
     },
     {
       "path": "frames/out/LEFT/frame_00011.jpg",
-      "gx": -0.10416666666666667,
+      "gx": -0.10526315789473684,
       "gy": 0,
       "clip": "LEFT",
       "frame": 11
     },
     {
       "path": "frames/out/LEFT/frame_00012.jpg",
-      "gx": -0.11458333333333333,
+      "gx": -0.11578947368421053,
       "gy": 0,
       "clip": "LEFT",
       "frame": 12
     },
     {
       "path": "frames/out/LEFT/frame_00013.jpg",
-      "gx": -0.125,
+      "gx": -0.12631578947368421,
       "gy": 0,
       "clip": "LEFT",
       "frame": 13
     },
     {
       "path": "frames/out/LEFT/frame_00014.jpg",
-      "gx": -0.13541666666666666,
+      "gx": -0.1368421052631579,
       "gy": 0,
       "clip": "LEFT",
       "frame": 14
     },
     {
       "path": "frames/out/LEFT/frame_00015.jpg",
-      "gx": -0.14583333333333334,
+      "gx": -0.14736842105263157,
       "gy": 0,
       "clip": "LEFT",
       "frame": 15
     },
     {
       "path": "frames/out/LEFT/frame_00016.jpg",
-      "gx": -0.15625,
+      "gx": -0.15789473684210525,
       "gy": 0,
       "clip": "LEFT",
       "frame": 16
     },
     {
       "path": "frames/out/LEFT/frame_00017.jpg",
-      "gx": -0.16666666666666666,
+      "gx": -0.16842105263157894,
       "gy": 0,
       "clip": "LEFT",
       "frame": 17
     },
     {
       "path": "frames/out/LEFT/frame_00018.jpg",
-      "gx": -0.17708333333333334,
+      "gx": -0.17894736842105263,
       "gy": 0,
       "clip": "LEFT",
       "frame": 18
     },
     {
       "path": "frames/out/LEFT/frame_00019.jpg",
-      "gx": -0.1875,
+      "gx": -0.18947368421052632,
       "gy": 0,
       "clip": "LEFT",
       "frame": 19
     },
     {
       "path": "frames/out/LEFT/frame_00020.jpg",
-      "gx": -0.19791666666666666,
+      "gx": -0.2,
       "gy": 0,
       "clip": "LEFT",
       "frame": 20
     },
     {
       "path": "frames/out/LEFT/frame_00021.jpg",
-      "gx": -0.20833333333333334,
+      "gx": -0.21052631578947367,
       "gy": 0,
       "clip": "LEFT",
       "frame": 21
     },
     {
       "path": "frames/out/LEFT/frame_00022.jpg",
-      "gx": -0.21875,
+      "gx": -0.22105263157894736,
       "gy": 0,
       "clip": "LEFT",
       "frame": 22
     },
     {
       "path": "frames/out/LEFT/frame_00023.jpg",
-      "gx": -0.22916666666666666,
+      "gx": -0.23157894736842105,
       "gy": 0,
       "clip": "LEFT",
       "frame": 23
     },
     {
       "path": "frames/out/LEFT/frame_00024.jpg",
-      "gx": -0.23958333333333334,
+      "gx": -0.24210526315789474,
       "gy": 0,
       "clip": "LEFT",
       "frame": 24
     },
     {
       "path": "frames/out/LEFT/frame_00025.jpg",
-      "gx": -0.25,
+      "gx": -0.25263157894736843,
       "gy": 0,
       "clip": "LEFT",
       "frame": 25
     },
     {
       "path": "frames/out/LEFT/frame_00026.jpg",
-      "gx": -0.2604166666666667,
+      "gx": -0.2631578947368421,
       "gy": 0,
       "clip": "LEFT",
       "frame": 26
     },
     {
       "path": "frames/out/LEFT/frame_00027.jpg",
-      "gx": -0.2708333333333333,
+      "gx": -0.2736842105263158,
       "gy": 0,
       "clip": "LEFT",
       "frame": 27
     },
     {
       "path": "frames/out/LEFT/frame_00028.jpg",
-      "gx": -0.28125,
+      "gx": -0.28421052631578947,
       "gy": 0,
       "clip": "LEFT",
       "frame": 28
     },
     {
       "path": "frames/out/LEFT/frame_00029.jpg",
-      "gx": -0.2916666666666667,
+      "gx": -0.29473684210526313,
       "gy": 0,
       "clip": "LEFT",
       "frame": 29
     },
     {
       "path": "frames/out/LEFT/frame_00030.jpg",
-      "gx": -0.3020833333333333,
+      "gx": -0.30526315789473685,
       "gy": 0,
       "clip": "LEFT",
       "frame": 30
     },
     {
       "path": "frames/out/LEFT/frame_00031.jpg",
-      "gx": -0.3125,
+      "gx": -0.3157894736842105,
       "gy": 0,
       "clip": "LEFT",
       "frame": 31
     },
     {
       "path": "frames/out/LEFT/frame_00032.jpg",
-      "gx": -0.3229166666666667,
+      "gx": -0.3263157894736842,
       "gy": 0,
       "clip": "LEFT",
       "frame": 32
     },
     {
       "path": "frames/out/LEFT/frame_00033.jpg",
-      "gx": -0.3333333333333333,
+      "gx": -0.3368421052631579,
       "gy": 0,
       "clip": "LEFT",
       "frame": 33
     },
     {
       "path": "frames/out/LEFT/frame_00034.jpg",
-      "gx": -0.34375,
+      "gx": -0.3473684210526316,
       "gy": 0,
       "clip": "LEFT",
       "frame": 34
     },
     {
       "path": "frames/out/LEFT/frame_00035.jpg",
-      "gx": -0.3541666666666667,
+      "gx": -0.35789473684210527,
       "gy": 0,
       "clip": "LEFT",
       "frame": 35
     },
     {
       "path": "frames/out/LEFT/frame_00036.jpg",
-      "gx": -0.3645833333333333,
+      "gx": -0.3684210526315789,
       "gy": 0,
       "clip": "LEFT",
       "frame": 36
     },
     {
       "path": "frames/out/LEFT/frame_00037.jpg",
-      "gx": -0.375,
+      "gx": -0.37894736842105264,
       "gy": 0,
       "clip": "LEFT",
       "frame": 37
     },
     {
       "path": "frames/out/LEFT/frame_00038.jpg",
-      "gx": -0.3854166666666667,
+      "gx": -0.3894736842105263,
       "gy": 0,
       "clip": "LEFT",
       "frame": 38
     },
     {
       "path": "frames/out/LEFT/frame_00039.jpg",
-      "gx": -0.3958333333333333,
+      "gx": -0.4,
       "gy": 0,
       "clip": "LEFT",
       "frame": 39
     },
     {
       "path": "frames/out/LEFT/frame_00040.jpg",
-      "gx": -0.40625,
+      "gx": -0.4105263157894737,
       "gy": 0,
       "clip": "LEFT",
       "frame": 40
     },
     {
       "path": "frames/out/LEFT/frame_00041.jpg",
-      "gx": -0.4166666666666667,
+      "gx": -0.42105263157894735,
       "gy": 0,
       "clip": "LEFT",
       "frame": 41
     },
     {
       "path": "frames/out/LEFT/frame_00042.jpg",
-      "gx": -0.4270833333333333,
+      "gx": -0.43157894736842106,
       "gy": 0,
       "clip": "LEFT",
       "frame": 42
     },
     {
       "path": "frames/out/LEFT/frame_00043.jpg",
-      "gx": -0.4375,
+      "gx": -0.4421052631578947,
       "gy": 0,
       "clip": "LEFT",
       "frame": 43
     },
     {
       "path": "frames/out/LEFT/frame_00044.jpg",
-      "gx": -0.4479166666666667,
+      "gx": -0.45263157894736844,
       "gy": 0,
       "clip": "LEFT",
       "frame": 44
     },
     {
       "path": "frames/out/LEFT/frame_00045.jpg",
-      "gx": -0.4583333333333333,
+      "gx": -0.4631578947368421,
       "gy": 0,
       "clip": "LEFT",
       "frame": 45
     },
     {
       "path": "frames/out/LEFT/frame_00046.jpg",
-      "gx": -0.46875,
+      "gx": -0.47368421052631576,
       "gy": 0,
       "clip": "LEFT",
       "frame": 46
     },
     {
       "path": "frames/out/LEFT/frame_00047.jpg",
-      "gx": -0.4791666666666667,
+      "gx": -0.4842105263157895,
       "gy": 0,
       "clip": "LEFT",
       "frame": 47
     },
     {
       "path": "frames/out/LEFT/frame_00048.jpg",
-      "gx": -0.4895833333333333,
+      "gx": -0.49473684210526314,
       "gy": 0,
       "clip": "LEFT",
       "frame": 48
     },
     {
       "path": "frames/out/LEFT/frame_00049.jpg",
-      "gx": -0.5,
+      "gx": -0.5052631578947369,
       "gy": 0,
       "clip": "LEFT",
       "frame": 49
     },
     {
       "path": "frames/out/LEFT/frame_00050.jpg",
-      "gx": -0.5104166666666666,
+      "gx": -0.5157894736842106,
       "gy": 0,
       "clip": "LEFT",
       "frame": 50
     },
     {
       "path": "frames/out/LEFT/frame_00051.jpg",
-      "gx": -0.5208333333333334,
+      "gx": -0.5263157894736842,
       "gy": 0,
       "clip": "LEFT",
       "frame": 51
     },
     {
       "path": "frames/out/LEFT/frame_00052.jpg",
-      "gx": -0.53125,
+      "gx": -0.5368421052631579,
       "gy": 0,
       "clip": "LEFT",
       "frame": 52
     },
     {
       "path": "frames/out/LEFT/frame_00053.jpg",
-      "gx": -0.5416666666666666,
+      "gx": -0.5473684210526316,
       "gy": 0,
       "clip": "LEFT",
       "frame": 53
     },
     {
       "path": "frames/out/LEFT/frame_00054.jpg",
-      "gx": -0.5520833333333334,
+      "gx": -0.5578947368421052,
       "gy": 0,
       "clip": "LEFT",
       "frame": 54
     },
     {
       "path": "frames/out/LEFT/frame_00055.jpg",
-      "gx": -0.5625,
+      "gx": -0.5684210526315789,
       "gy": 0,
       "clip": "LEFT",
       "frame": 55
     },
     {
       "path": "frames/out/LEFT/frame_00056.jpg",
-      "gx": -0.5729166666666666,
+      "gx": -0.5789473684210527,
       "gy": 0,
       "clip": "LEFT",
       "frame": 56
     },
     {
       "path": "frames/out/LEFT/frame_00057.jpg",
-      "gx": -0.5833333333333334,
+      "gx": -0.5894736842105263,
       "gy": 0,
       "clip": "LEFT",
       "frame": 57
     },
     {
       "path": "frames/out/LEFT/frame_00058.jpg",
-      "gx": -0.59375,
+      "gx": -0.6,
       "gy": 0,
       "clip": "LEFT",
       "frame": 58
     },
     {
       "path": "frames/out/LEFT/frame_00059.jpg",
-      "gx": -0.6041666666666666,
+      "gx": -0.6105263157894737,
       "gy": 0,
       "clip": "LEFT",
       "frame": 59
     },
     {
       "path": "frames/out/LEFT/frame_00060.jpg",
-      "gx": -0.6145833333333334,
+      "gx": -0.6210526315789474,
       "gy": 0,
       "clip": "LEFT",
       "frame": 60
     },
     {
       "path": "frames/out/LEFT/frame_00061.jpg",
-      "gx": -0.625,
+      "gx": -0.631578947368421,
       "gy": 0,
       "clip": "LEFT",
       "frame": 61
     },
     {
       "path": "frames/out/LEFT/frame_00062.jpg",
-      "gx": -0.6354166666666666,
+      "gx": -0.6421052631578947,
       "gy": 0,
       "clip": "LEFT",
       "frame": 62
     },
     {
       "path": "frames/out/LEFT/frame_00063.jpg",
-      "gx": -0.6458333333333334,
+      "gx": -0.6526315789473685,
       "gy": 0,
       "clip": "LEFT",
       "frame": 63
     },
     {
       "path": "frames/out/LEFT/frame_00064.jpg",
-      "gx": -0.65625,
+      "gx": -0.6631578947368421,
       "gy": 0,
       "clip": "LEFT",
       "frame": 64
     },
     {
       "path": "frames/out/LEFT/frame_00065.jpg",
-      "gx": -0.6666666666666666,
+      "gx": -0.6736842105263158,
       "gy": 0,
       "clip": "LEFT",
       "frame": 65
     },
     {
       "path": "frames/out/LEFT/frame_00066.jpg",
-      "gx": -0.6770833333333334,
+      "gx": -0.6842105263157895,
       "gy": 0,
       "clip": "LEFT",
       "frame": 66
     },
     {
       "path": "frames/out/LEFT/frame_00067.jpg",
-      "gx": -0.6875,
+      "gx": -0.6947368421052632,
       "gy": 0,
       "clip": "LEFT",
       "frame": 67
     },
     {
       "path": "frames/out/LEFT/frame_00068.jpg",
-      "gx": -0.6979166666666666,
+      "gx": -0.7052631578947368,
       "gy": 0,
       "clip": "LEFT",
       "frame": 68
     },
     {
       "path": "frames/out/LEFT/frame_00069.jpg",
-      "gx": -0.7083333333333334,
+      "gx": -0.7157894736842105,
       "gy": 0,
       "clip": "LEFT",
       "frame": 69
     },
     {
       "path": "frames/out/LEFT/frame_00070.jpg",
-      "gx": -0.71875,
+      "gx": -0.7263157894736842,
       "gy": 0,
       "clip": "LEFT",
       "frame": 70
     },
     {
       "path": "frames/out/LEFT/frame_00071.jpg",
-      "gx": -0.7291666666666666,
+      "gx": -0.7368421052631579,
       "gy": 0,
       "clip": "LEFT",
       "frame": 71
     },
     {
       "path": "frames/out/LEFT/frame_00072.jpg",
-      "gx": -0.7395833333333334,
+      "gx": -0.7473684210526316,
       "gy": 0,
       "clip": "LEFT",
       "frame": 72
     },
     {
       "path": "frames/out/LEFT/frame_00073.jpg",
-      "gx": -0.75,
+      "gx": -0.7578947368421053,
       "gy": 0,
       "clip": "LEFT",
       "frame": 73
     },
     {
       "path": "frames/out/LEFT/frame_00074.jpg",
-      "gx": -0.7604166666666666,
+      "gx": -0.7684210526315789,
       "gy": 0,
       "clip": "LEFT",
       "frame": 74
     },
     {
       "path": "frames/out/LEFT/frame_00075.jpg",
-      "gx": -0.7708333333333334,
+      "gx": -0.7789473684210526,
       "gy": 0,
       "clip": "LEFT",
       "frame": 75
     },
     {
       "path": "frames/out/LEFT/frame_00076.jpg",
-      "gx": -0.78125,
+      "gx": -0.7894736842105263,
       "gy": 0,
       "clip": "LEFT",
       "frame": 76
     },
     {
       "path": "frames/out/LEFT/frame_00077.jpg",
-      "gx": -0.7916666666666666,
+      "gx": -0.8,
       "gy": 0,
       "clip": "LEFT",
       "frame": 77
     },
     {
       "path": "frames/out/LEFT/frame_00078.jpg",
-      "gx": -0.8020833333333334,
+      "gx": -0.8105263157894737,
       "gy": 0,
       "clip": "LEFT",
       "frame": 78
     },
     {
       "path": "frames/out/LEFT/frame_00079.jpg",
-      "gx": -0.8125,
+      "gx": -0.8210526315789474,
       "gy": 0,
       "clip": "LEFT",
       "frame": 79
     },
     {
       "path": "frames/out/LEFT/frame_00080.jpg",
-      "gx": -0.8229166666666666,
+      "gx": -0.8315789473684211,
       "gy": 0,
       "clip": "LEFT",
       "frame": 80
     },
     {
       "path": "frames/out/LEFT/frame_00081.jpg",
-      "gx": -0.8333333333333334,
+      "gx": -0.8421052631578947,
       "gy": 0,
       "clip": "LEFT",
       "frame": 81
     },
     {
       "path": "frames/out/LEFT/frame_00082.jpg",
-      "gx": -0.84375,
+      "gx": -0.8526315789473684,
       "gy": 0,
       "clip": "LEFT",
       "frame": 82
     },
     {
       "path": "frames/out/LEFT/frame_00083.jpg",
-      "gx": -0.8541666666666666,
+      "gx": -0.8631578947368421,
       "gy": 0,
       "clip": "LEFT",
       "frame": 83
     },
     {
       "path": "frames/out/LEFT/frame_00084.jpg",
-      "gx": -0.8645833333333334,
+      "gx": -0.8736842105263158,
       "gy": 0,
       "clip": "LEFT",
       "frame": 84
     },
     {
       "path": "frames/out/LEFT/frame_00085.jpg",
-      "gx": -0.875,
+      "gx": -0.8842105263157894,
       "gy": 0,
       "clip": "LEFT",
       "frame": 85
     },
     {
       "path": "frames/out/LEFT/frame_00086.jpg",
-      "gx": -0.8854166666666666,
+      "gx": -0.8947368421052632,
       "gy": 0,
       "clip": "LEFT",
       "frame": 86
     },
     {
       "path": "frames/out/LEFT/frame_00087.jpg",
-      "gx": -0.8958333333333334,
+      "gx": -0.9052631578947369,
       "gy": 0,
       "clip": "LEFT",
       "frame": 87
     },
     {
       "path": "frames/out/LEFT/frame_00088.jpg",
-      "gx": -0.90625,
+      "gx": -0.9157894736842105,
       "gy": 0,
       "clip": "LEFT",
       "frame": 88
     },
     {
       "path": "frames/out/LEFT/frame_00089.jpg",
-      "gx": -0.9166666666666666,
+      "gx": -0.9263157894736842,
       "gy": 0,
       "clip": "LEFT",
       "frame": 89
     },
     {
       "path": "frames/out/LEFT/frame_00090.jpg",
-      "gx": -0.9270833333333334,
+      "gx": -0.9368421052631579,
       "gy": 0,
       "clip": "LEFT",
       "frame": 90
     },
     {
       "path": "frames/out/LEFT/frame_00091.jpg",
-      "gx": -0.9375,
+      "gx": -0.9473684210526315,
       "gy": 0,
       "clip": "LEFT",
       "frame": 91
     },
     {
       "path": "frames/out/LEFT/frame_00092.jpg",
-      "gx": -0.9479166666666666,
+      "gx": -0.9578947368421052,
       "gy": 0,
       "clip": "LEFT",
       "frame": 92
     },
     {
       "path": "frames/out/LEFT/frame_00093.jpg",
-      "gx": -0.9583333333333334,
+      "gx": -0.968421052631579,
       "gy": 0,
       "clip": "LEFT",
       "frame": 93
     },
     {
       "path": "frames/out/LEFT/frame_00094.jpg",
-      "gx": -0.96875,
+      "gx": -0.9789473684210527,
       "gy": 0,
       "clip": "LEFT",
       "frame": 94
     },
     {
       "path": "frames/out/LEFT/frame_00095.jpg",
-      "gx": -0.9791666666666666,
+      "gx": -0.9894736842105263,
       "gy": 0,
       "clip": "LEFT",
       "frame": 95
     },
     {
       "path": "frames/out/LEFT/frame_00096.jpg",
-      "gx": -0.9895833333333334,
-      "gy": 0,
-      "clip": "LEFT",
-      "frame": 96
-    },
-    {
-      "path": "frames/out/LEFT/frame_00097.jpg",
       "gx": -1,
       "gy": 0,
       "clip": "LEFT",
-      "frame": 97
+      "frame": 96
     },
     {
       "path": "frames/out/LEFT__REV/frame_00001.jpg",
@@ -691,675 +684,668 @@
     },
     {
       "path": "frames/out/LEFT__REV/frame_00002.jpg",
-      "gx": -0.9895833333333334,
+      "gx": -0.9894736842105263,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 2
     },
     {
       "path": "frames/out/LEFT__REV/frame_00003.jpg",
-      "gx": -0.9791666666666666,
+      "gx": -0.9789473684210527,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 3
     },
     {
       "path": "frames/out/LEFT__REV/frame_00004.jpg",
-      "gx": -0.96875,
+      "gx": -0.968421052631579,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 4
     },
     {
       "path": "frames/out/LEFT__REV/frame_00005.jpg",
-      "gx": -0.9583333333333334,
+      "gx": -0.9578947368421052,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 5
     },
     {
       "path": "frames/out/LEFT__REV/frame_00006.jpg",
-      "gx": -0.9479166666666666,
+      "gx": -0.9473684210526316,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 6
     },
     {
       "path": "frames/out/LEFT__REV/frame_00007.jpg",
-      "gx": -0.9375,
+      "gx": -0.9368421052631579,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 7
     },
     {
       "path": "frames/out/LEFT__REV/frame_00008.jpg",
-      "gx": -0.9270833333333334,
+      "gx": -0.9263157894736842,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 8
     },
     {
       "path": "frames/out/LEFT__REV/frame_00009.jpg",
-      "gx": -0.9166666666666666,
+      "gx": -0.9157894736842105,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 9
     },
     {
       "path": "frames/out/LEFT__REV/frame_00010.jpg",
-      "gx": -0.90625,
+      "gx": -0.9052631578947369,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 10
     },
     {
       "path": "frames/out/LEFT__REV/frame_00011.jpg",
-      "gx": -0.8958333333333334,
+      "gx": -0.8947368421052632,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 11
     },
     {
       "path": "frames/out/LEFT__REV/frame_00012.jpg",
-      "gx": -0.8854166666666666,
+      "gx": -0.8842105263157894,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 12
     },
     {
       "path": "frames/out/LEFT__REV/frame_00013.jpg",
-      "gx": -0.875,
+      "gx": -0.8736842105263158,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 13
     },
     {
       "path": "frames/out/LEFT__REV/frame_00014.jpg",
-      "gx": -0.8645833333333334,
+      "gx": -0.8631578947368421,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 14
     },
     {
       "path": "frames/out/LEFT__REV/frame_00015.jpg",
-      "gx": -0.8541666666666666,
+      "gx": -0.8526315789473684,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 15
     },
     {
       "path": "frames/out/LEFT__REV/frame_00016.jpg",
-      "gx": -0.84375,
+      "gx": -0.8421052631578947,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 16
     },
     {
       "path": "frames/out/LEFT__REV/frame_00017.jpg",
-      "gx": -0.8333333333333334,
+      "gx": -0.8315789473684211,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 17
     },
     {
       "path": "frames/out/LEFT__REV/frame_00018.jpg",
-      "gx": -0.8229166666666666,
+      "gx": -0.8210526315789474,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 18
     },
     {
       "path": "frames/out/LEFT__REV/frame_00019.jpg",
-      "gx": -0.8125,
+      "gx": -0.8105263157894737,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 19
     },
     {
       "path": "frames/out/LEFT__REV/frame_00020.jpg",
-      "gx": -0.8020833333333334,
+      "gx": -0.8,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 20
     },
     {
       "path": "frames/out/LEFT__REV/frame_00021.jpg",
-      "gx": -0.7916666666666666,
+      "gx": -0.7894736842105263,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 21
     },
     {
       "path": "frames/out/LEFT__REV/frame_00022.jpg",
-      "gx": -0.78125,
+      "gx": -0.7789473684210526,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 22
     },
     {
       "path": "frames/out/LEFT__REV/frame_00023.jpg",
-      "gx": -0.7708333333333334,
+      "gx": -0.7684210526315789,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 23
     },
     {
       "path": "frames/out/LEFT__REV/frame_00024.jpg",
-      "gx": -0.7604166666666666,
+      "gx": -0.7578947368421053,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 24
     },
     {
       "path": "frames/out/LEFT__REV/frame_00025.jpg",
-      "gx": -0.75,
+      "gx": -0.7473684210526316,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 25
     },
     {
       "path": "frames/out/LEFT__REV/frame_00026.jpg",
-      "gx": -0.7395833333333333,
+      "gx": -0.736842105263158,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 26
     },
     {
       "path": "frames/out/LEFT__REV/frame_00027.jpg",
-      "gx": -0.7291666666666667,
+      "gx": -0.7263157894736842,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 27
     },
     {
       "path": "frames/out/LEFT__REV/frame_00028.jpg",
-      "gx": -0.71875,
+      "gx": -0.7157894736842105,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 28
     },
     {
       "path": "frames/out/LEFT__REV/frame_00029.jpg",
-      "gx": -0.7083333333333333,
+      "gx": -0.7052631578947368,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 29
     },
     {
       "path": "frames/out/LEFT__REV/frame_00030.jpg",
-      "gx": -0.6979166666666667,
+      "gx": -0.6947368421052631,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 30
     },
     {
       "path": "frames/out/LEFT__REV/frame_00031.jpg",
-      "gx": -0.6875,
+      "gx": -0.6842105263157895,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 31
     },
     {
       "path": "frames/out/LEFT__REV/frame_00032.jpg",
-      "gx": -0.6770833333333333,
+      "gx": -0.6736842105263158,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 32
     },
     {
       "path": "frames/out/LEFT__REV/frame_00033.jpg",
-      "gx": -0.6666666666666667,
+      "gx": -0.6631578947368422,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 33
     },
     {
       "path": "frames/out/LEFT__REV/frame_00034.jpg",
-      "gx": -0.65625,
+      "gx": -0.6526315789473685,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 34
     },
     {
       "path": "frames/out/LEFT__REV/frame_00035.jpg",
-      "gx": -0.6458333333333333,
+      "gx": -0.6421052631578947,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 35
     },
     {
       "path": "frames/out/LEFT__REV/frame_00036.jpg",
-      "gx": -0.6354166666666667,
+      "gx": -0.631578947368421,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 36
     },
     {
       "path": "frames/out/LEFT__REV/frame_00037.jpg",
-      "gx": -0.625,
+      "gx": -0.6210526315789473,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 37
     },
     {
       "path": "frames/out/LEFT__REV/frame_00038.jpg",
-      "gx": -0.6145833333333333,
+      "gx": -0.6105263157894737,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 38
     },
     {
       "path": "frames/out/LEFT__REV/frame_00039.jpg",
-      "gx": -0.6041666666666667,
+      "gx": -0.6,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 39
     },
     {
       "path": "frames/out/LEFT__REV/frame_00040.jpg",
-      "gx": -0.59375,
+      "gx": -0.5894736842105264,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 40
     },
     {
       "path": "frames/out/LEFT__REV/frame_00041.jpg",
-      "gx": -0.5833333333333333,
+      "gx": -0.5789473684210527,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 41
     },
     {
       "path": "frames/out/LEFT__REV/frame_00042.jpg",
-      "gx": -0.5729166666666667,
+      "gx": -0.5684210526315789,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 42
     },
     {
       "path": "frames/out/LEFT__REV/frame_00043.jpg",
-      "gx": -0.5625,
+      "gx": -0.5578947368421052,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 43
     },
     {
       "path": "frames/out/LEFT__REV/frame_00044.jpg",
-      "gx": -0.5520833333333333,
+      "gx": -0.5473684210526315,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 44
     },
     {
       "path": "frames/out/LEFT__REV/frame_00045.jpg",
-      "gx": -0.5416666666666667,
+      "gx": -0.5368421052631579,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 45
     },
     {
       "path": "frames/out/LEFT__REV/frame_00046.jpg",
-      "gx": -0.53125,
+      "gx": -0.5263157894736843,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 46
     },
     {
       "path": "frames/out/LEFT__REV/frame_00047.jpg",
-      "gx": -0.5208333333333333,
+      "gx": -0.5157894736842106,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 47
     },
     {
       "path": "frames/out/LEFT__REV/frame_00048.jpg",
-      "gx": -0.5104166666666667,
+      "gx": -0.5052631578947369,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 48
     },
     {
       "path": "frames/out/LEFT__REV/frame_00049.jpg",
-      "gx": -0.5,
+      "gx": -0.49473684210526314,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 49
     },
     {
       "path": "frames/out/LEFT__REV/frame_00050.jpg",
-      "gx": -0.48958333333333337,
+      "gx": -0.4842105263157894,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 50
     },
     {
       "path": "frames/out/LEFT__REV/frame_00051.jpg",
-      "gx": -0.47916666666666663,
+      "gx": -0.4736842105263158,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 51
     },
     {
       "path": "frames/out/LEFT__REV/frame_00052.jpg",
-      "gx": -0.46875,
+      "gx": -0.4631578947368421,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 52
     },
     {
       "path": "frames/out/LEFT__REV/frame_00053.jpg",
-      "gx": -0.45833333333333337,
+      "gx": -0.4526315789473684,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 53
     },
     {
       "path": "frames/out/LEFT__REV/frame_00054.jpg",
-      "gx": -0.44791666666666663,
+      "gx": -0.4421052631578948,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 54
     },
     {
       "path": "frames/out/LEFT__REV/frame_00055.jpg",
-      "gx": -0.4375,
+      "gx": -0.43157894736842106,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 55
     },
     {
       "path": "frames/out/LEFT__REV/frame_00056.jpg",
-      "gx": -0.42708333333333337,
+      "gx": -0.42105263157894735,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 56
     },
     {
       "path": "frames/out/LEFT__REV/frame_00057.jpg",
-      "gx": -0.41666666666666663,
+      "gx": -0.41052631578947374,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 57
     },
     {
       "path": "frames/out/LEFT__REV/frame_00058.jpg",
-      "gx": -0.40625,
+      "gx": -0.4,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 58
     },
     {
       "path": "frames/out/LEFT__REV/frame_00059.jpg",
-      "gx": -0.39583333333333337,
+      "gx": -0.3894736842105263,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 59
     },
     {
       "path": "frames/out/LEFT__REV/frame_00060.jpg",
-      "gx": -0.38541666666666663,
+      "gx": -0.3789473684210526,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 60
     },
     {
       "path": "frames/out/LEFT__REV/frame_00061.jpg",
-      "gx": -0.375,
+      "gx": -0.368421052631579,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 61
     },
     {
       "path": "frames/out/LEFT__REV/frame_00062.jpg",
-      "gx": -0.36458333333333337,
+      "gx": -0.35789473684210527,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 62
     },
     {
       "path": "frames/out/LEFT__REV/frame_00063.jpg",
-      "gx": -0.35416666666666663,
+      "gx": -0.34736842105263155,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 63
     },
     {
       "path": "frames/out/LEFT__REV/frame_00064.jpg",
-      "gx": -0.34375,
+      "gx": -0.33684210526315794,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 64
     },
     {
       "path": "frames/out/LEFT__REV/frame_00065.jpg",
-      "gx": -0.33333333333333337,
+      "gx": -0.3263157894736842,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 65
     },
     {
       "path": "frames/out/LEFT__REV/frame_00066.jpg",
-      "gx": -0.32291666666666663,
+      "gx": -0.3157894736842105,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 66
     },
     {
       "path": "frames/out/LEFT__REV/frame_00067.jpg",
-      "gx": -0.3125,
+      "gx": -0.3052631578947368,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 67
     },
     {
       "path": "frames/out/LEFT__REV/frame_00068.jpg",
-      "gx": -0.30208333333333337,
+      "gx": -0.2947368421052632,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 68
     },
     {
       "path": "frames/out/LEFT__REV/frame_00069.jpg",
-      "gx": -0.29166666666666663,
+      "gx": -0.28421052631578947,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 69
     },
     {
       "path": "frames/out/LEFT__REV/frame_00070.jpg",
-      "gx": -0.28125,
+      "gx": -0.27368421052631575,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 70
     },
     {
       "path": "frames/out/LEFT__REV/frame_00071.jpg",
-      "gx": -0.27083333333333337,
+      "gx": -0.26315789473684215,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 71
     },
     {
       "path": "frames/out/LEFT__REV/frame_00072.jpg",
-      "gx": -0.26041666666666663,
+      "gx": -0.25263157894736843,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 72
     },
     {
       "path": "frames/out/LEFT__REV/frame_00073.jpg",
-      "gx": -0.25,
+      "gx": -0.2421052631578947,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 73
     },
     {
       "path": "frames/out/LEFT__REV/frame_00074.jpg",
-      "gx": -0.23958333333333337,
+      "gx": -0.2315789473684211,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 74
     },
     {
       "path": "frames/out/LEFT__REV/frame_00075.jpg",
-      "gx": -0.22916666666666663,
+      "gx": -0.2210526315789474,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 75
     },
     {
       "path": "frames/out/LEFT__REV/frame_00076.jpg",
-      "gx": -0.21875,
+      "gx": -0.21052631578947367,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 76
     },
     {
       "path": "frames/out/LEFT__REV/frame_00077.jpg",
-      "gx": -0.20833333333333337,
+      "gx": -0.19999999999999996,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 77
     },
     {
       "path": "frames/out/LEFT__REV/frame_00078.jpg",
-      "gx": -0.19791666666666663,
+      "gx": -0.18947368421052635,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 78
     },
     {
       "path": "frames/out/LEFT__REV/frame_00079.jpg",
-      "gx": -0.1875,
+      "gx": -0.17894736842105263,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 79
     },
     {
       "path": "frames/out/LEFT__REV/frame_00080.jpg",
-      "gx": -0.17708333333333337,
+      "gx": -0.16842105263157892,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 80
     },
     {
       "path": "frames/out/LEFT__REV/frame_00081.jpg",
-      "gx": -0.16666666666666663,
+      "gx": -0.1578947368421053,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 81
     },
     {
       "path": "frames/out/LEFT__REV/frame_00082.jpg",
-      "gx": -0.15625,
+      "gx": -0.1473684210526316,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 82
     },
     {
       "path": "frames/out/LEFT__REV/frame_00083.jpg",
-      "gx": -0.14583333333333337,
+      "gx": -0.13684210526315788,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 83
     },
     {
       "path": "frames/out/LEFT__REV/frame_00084.jpg",
-      "gx": -0.13541666666666663,
+      "gx": -0.12631578947368416,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 84
     },
     {
       "path": "frames/out/LEFT__REV/frame_00085.jpg",
-      "gx": -0.125,
+      "gx": -0.11578947368421055,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 85
     },
     {
       "path": "frames/out/LEFT__REV/frame_00086.jpg",
-      "gx": -0.11458333333333337,
+      "gx": -0.10526315789473684,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 86
     },
     {
       "path": "frames/out/LEFT__REV/frame_00087.jpg",
-      "gx": -0.10416666666666663,
+      "gx": -0.09473684210526312,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 87
     },
     {
       "path": "frames/out/LEFT__REV/frame_00088.jpg",
-      "gx": -0.09375,
+      "gx": -0.08421052631578951,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 88
     },
     {
       "path": "frames/out/LEFT__REV/frame_00089.jpg",
-      "gx": -0.08333333333333337,
+      "gx": -0.0736842105263158,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 89
     },
     {
       "path": "frames/out/LEFT__REV/frame_00090.jpg",
-      "gx": -0.07291666666666663,
+      "gx": -0.06315789473684208,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 90
     },
     {
       "path": "frames/out/LEFT__REV/frame_00091.jpg",
-      "gx": -0.0625,
+      "gx": -0.052631578947368474,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 91
     },
     {
       "path": "frames/out/LEFT__REV/frame_00092.jpg",
-      "gx": -0.05208333333333337,
+      "gx": -0.04210526315789476,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 92
     },
     {
       "path": "frames/out/LEFT__REV/frame_00093.jpg",
-      "gx": -0.04166666666666663,
+      "gx": -0.03157894736842104,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 93
     },
     {
       "path": "frames/out/LEFT__REV/frame_00094.jpg",
-      "gx": -0.03125,
+      "gx": -0.021052631578947323,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 94
     },
     {
       "path": "frames/out/LEFT__REV/frame_00095.jpg",
-      "gx": -0.02083333333333337,
+      "gx": -0.010526315789473717,
       "gy": 0,
       "clip": "LEFT__REV",
       "frame": 95
     },
     {
       "path": "frames/out/LEFT__REV/frame_00096.jpg",
-      "gx": -0.01041666666666663,
-      "gy": 0,
-      "clip": "LEFT__REV",
-      "frame": 96
-    },
-    {
-      "path": "frames/out/LEFT__REV/frame_00097.jpg",
       "gx": 0,
       "gy": 0,
       "clip": "LEFT__REV",
-      "frame": 97
+      "frame": 96
     },
     {
       "path": "frames/out/RIGHT/frame_00001.jpg",
@@ -2729,674 +2715,667 @@
     {
       "path": "frames/out/DOWN/frame_00002.jpg",
       "gx": 0,
-      "gy": -0.010416666666666666,
+      "gy": -0.010526315789473684,
       "clip": "DOWN",
       "frame": 2
     },
     {
       "path": "frames/out/DOWN/frame_00003.jpg",
       "gx": 0,
-      "gy": -0.020833333333333332,
+      "gy": -0.021052631578947368,
       "clip": "DOWN",
       "frame": 3
     },
     {
       "path": "frames/out/DOWN/frame_00004.jpg",
       "gx": 0,
-      "gy": -0.03125,
+      "gy": -0.031578947368421054,
       "clip": "DOWN",
       "frame": 4
     },
     {
       "path": "frames/out/DOWN/frame_00005.jpg",
       "gx": 0,
-      "gy": -0.041666666666666664,
+      "gy": -0.042105263157894736,
       "clip": "DOWN",
       "frame": 5
     },
     {
       "path": "frames/out/DOWN/frame_00006.jpg",
       "gx": 0,
-      "gy": -0.052083333333333336,
+      "gy": -0.05263157894736842,
       "clip": "DOWN",
       "frame": 6
     },
     {
       "path": "frames/out/DOWN/frame_00007.jpg",
       "gx": 0,
-      "gy": -0.0625,
+      "gy": -0.06315789473684211,
       "clip": "DOWN",
       "frame": 7
     },
     {
       "path": "frames/out/DOWN/frame_00008.jpg",
       "gx": 0,
-      "gy": -0.07291666666666667,
+      "gy": -0.07368421052631578,
       "clip": "DOWN",
       "frame": 8
     },
     {
       "path": "frames/out/DOWN/frame_00009.jpg",
       "gx": 0,
-      "gy": -0.08333333333333333,
+      "gy": -0.08421052631578947,
       "clip": "DOWN",
       "frame": 9
     },
     {
       "path": "frames/out/DOWN/frame_00010.jpg",
       "gx": 0,
-      "gy": -0.09375,
+      "gy": -0.09473684210526316,
       "clip": "DOWN",
       "frame": 10
     },
     {
       "path": "frames/out/DOWN/frame_00011.jpg",
       "gx": 0,
-      "gy": -0.10416666666666667,
+      "gy": -0.10526315789473684,
       "clip": "DOWN",
       "frame": 11
     },
     {
       "path": "frames/out/DOWN/frame_00012.jpg",
       "gx": 0,
-      "gy": -0.11458333333333333,
+      "gy": -0.11578947368421053,
       "clip": "DOWN",
       "frame": 12
     },
     {
       "path": "frames/out/DOWN/frame_00013.jpg",
       "gx": 0,
-      "gy": -0.125,
+      "gy": -0.12631578947368421,
       "clip": "DOWN",
       "frame": 13
     },
     {
       "path": "frames/out/DOWN/frame_00014.jpg",
       "gx": 0,
-      "gy": -0.13541666666666666,
+      "gy": -0.1368421052631579,
       "clip": "DOWN",
       "frame": 14
     },
     {
       "path": "frames/out/DOWN/frame_00015.jpg",
       "gx": 0,
-      "gy": -0.14583333333333334,
+      "gy": -0.14736842105263157,
       "clip": "DOWN",
       "frame": 15
     },
     {
       "path": "frames/out/DOWN/frame_00016.jpg",
       "gx": 0,
-      "gy": -0.15625,
+      "gy": -0.15789473684210525,
       "clip": "DOWN",
       "frame": 16
     },
     {
       "path": "frames/out/DOWN/frame_00017.jpg",
       "gx": 0,
-      "gy": -0.16666666666666666,
+      "gy": -0.16842105263157894,
       "clip": "DOWN",
       "frame": 17
     },
     {
       "path": "frames/out/DOWN/frame_00018.jpg",
       "gx": 0,
-      "gy": -0.17708333333333334,
+      "gy": -0.17894736842105263,
       "clip": "DOWN",
       "frame": 18
     },
     {
       "path": "frames/out/DOWN/frame_00019.jpg",
       "gx": 0,
-      "gy": -0.1875,
+      "gy": -0.18947368421052632,
       "clip": "DOWN",
       "frame": 19
     },
     {
       "path": "frames/out/DOWN/frame_00020.jpg",
       "gx": 0,
-      "gy": -0.19791666666666666,
+      "gy": -0.2,
       "clip": "DOWN",
       "frame": 20
     },
     {
       "path": "frames/out/DOWN/frame_00021.jpg",
       "gx": 0,
-      "gy": -0.20833333333333334,
+      "gy": -0.21052631578947367,
       "clip": "DOWN",
       "frame": 21
     },
     {
       "path": "frames/out/DOWN/frame_00022.jpg",
       "gx": 0,
-      "gy": -0.21875,
+      "gy": -0.22105263157894736,
       "clip": "DOWN",
       "frame": 22
     },
     {
       "path": "frames/out/DOWN/frame_00023.jpg",
       "gx": 0,
-      "gy": -0.22916666666666666,
+      "gy": -0.23157894736842105,
       "clip": "DOWN",
       "frame": 23
     },
     {
       "path": "frames/out/DOWN/frame_00024.jpg",
       "gx": 0,
-      "gy": -0.23958333333333334,
+      "gy": -0.24210526315789474,
       "clip": "DOWN",
       "frame": 24
     },
     {
       "path": "frames/out/DOWN/frame_00025.jpg",
       "gx": 0,
-      "gy": -0.25,
+      "gy": -0.25263157894736843,
       "clip": "DOWN",
       "frame": 25
     },
     {
       "path": "frames/out/DOWN/frame_00026.jpg",
       "gx": 0,
-      "gy": -0.2604166666666667,
+      "gy": -0.2631578947368421,
       "clip": "DOWN",
       "frame": 26
     },
     {
       "path": "frames/out/DOWN/frame_00027.jpg",
       "gx": 0,
-      "gy": -0.2708333333333333,
+      "gy": -0.2736842105263158,
       "clip": "DOWN",
       "frame": 27
     },
     {
       "path": "frames/out/DOWN/frame_00028.jpg",
       "gx": 0,
-      "gy": -0.28125,
+      "gy": -0.28421052631578947,
       "clip": "DOWN",
       "frame": 28
     },
     {
       "path": "frames/out/DOWN/frame_00029.jpg",
       "gx": 0,
-      "gy": -0.2916666666666667,
+      "gy": -0.29473684210526313,
       "clip": "DOWN",
       "frame": 29
     },
     {
       "path": "frames/out/DOWN/frame_00030.jpg",
       "gx": 0,
-      "gy": -0.3020833333333333,
+      "gy": -0.30526315789473685,
       "clip": "DOWN",
       "frame": 30
     },
     {
       "path": "frames/out/DOWN/frame_00031.jpg",
       "gx": 0,
-      "gy": -0.3125,
+      "gy": -0.3157894736842105,
       "clip": "DOWN",
       "frame": 31
     },
     {
       "path": "frames/out/DOWN/frame_00032.jpg",
       "gx": 0,
-      "gy": -0.3229166666666667,
+      "gy": -0.3263157894736842,
       "clip": "DOWN",
       "frame": 32
     },
     {
       "path": "frames/out/DOWN/frame_00033.jpg",
       "gx": 0,
-      "gy": -0.3333333333333333,
+      "gy": -0.3368421052631579,
       "clip": "DOWN",
       "frame": 33
     },
     {
       "path": "frames/out/DOWN/frame_00034.jpg",
       "gx": 0,
-      "gy": -0.34375,
+      "gy": -0.3473684210526316,
       "clip": "DOWN",
       "frame": 34
     },
     {
       "path": "frames/out/DOWN/frame_00035.jpg",
       "gx": 0,
-      "gy": -0.3541666666666667,
+      "gy": -0.35789473684210527,
       "clip": "DOWN",
       "frame": 35
     },
     {
       "path": "frames/out/DOWN/frame_00036.jpg",
       "gx": 0,
-      "gy": -0.3645833333333333,
+      "gy": -0.3684210526315789,
       "clip": "DOWN",
       "frame": 36
     },
     {
       "path": "frames/out/DOWN/frame_00037.jpg",
       "gx": 0,
-      "gy": -0.375,
+      "gy": -0.37894736842105264,
       "clip": "DOWN",
       "frame": 37
     },
     {
       "path": "frames/out/DOWN/frame_00038.jpg",
       "gx": 0,
-      "gy": -0.3854166666666667,
+      "gy": -0.3894736842105263,
       "clip": "DOWN",
       "frame": 38
     },
     {
       "path": "frames/out/DOWN/frame_00039.jpg",
       "gx": 0,
-      "gy": -0.3958333333333333,
+      "gy": -0.4,
       "clip": "DOWN",
       "frame": 39
     },
     {
       "path": "frames/out/DOWN/frame_00040.jpg",
       "gx": 0,
-      "gy": -0.40625,
+      "gy": -0.4105263157894737,
       "clip": "DOWN",
       "frame": 40
     },
     {
       "path": "frames/out/DOWN/frame_00041.jpg",
       "gx": 0,
-      "gy": -0.4166666666666667,
+      "gy": -0.42105263157894735,
       "clip": "DOWN",
       "frame": 41
     },
     {
       "path": "frames/out/DOWN/frame_00042.jpg",
       "gx": 0,
-      "gy": -0.4270833333333333,
+      "gy": -0.43157894736842106,
       "clip": "DOWN",
       "frame": 42
     },
     {
       "path": "frames/out/DOWN/frame_00043.jpg",
       "gx": 0,
-      "gy": -0.4375,
+      "gy": -0.4421052631578947,
       "clip": "DOWN",
       "frame": 43
     },
     {
       "path": "frames/out/DOWN/frame_00044.jpg",
       "gx": 0,
-      "gy": -0.4479166666666667,
+      "gy": -0.45263157894736844,
       "clip": "DOWN",
       "frame": 44
     },
     {
       "path": "frames/out/DOWN/frame_00045.jpg",
       "gx": 0,
-      "gy": -0.4583333333333333,
+      "gy": -0.4631578947368421,
       "clip": "DOWN",
       "frame": 45
     },
     {
       "path": "frames/out/DOWN/frame_00046.jpg",
       "gx": 0,
-      "gy": -0.46875,
+      "gy": -0.47368421052631576,
       "clip": "DOWN",
       "frame": 46
     },
     {
       "path": "frames/out/DOWN/frame_00047.jpg",
       "gx": 0,
-      "gy": -0.4791666666666667,
+      "gy": -0.4842105263157895,
       "clip": "DOWN",
       "frame": 47
     },
     {
       "path": "frames/out/DOWN/frame_00048.jpg",
       "gx": 0,
-      "gy": -0.4895833333333333,
+      "gy": -0.49473684210526314,
       "clip": "DOWN",
       "frame": 48
     },
     {
       "path": "frames/out/DOWN/frame_00049.jpg",
       "gx": 0,
-      "gy": -0.5,
+      "gy": -0.5052631578947369,
       "clip": "DOWN",
       "frame": 49
     },
     {
       "path": "frames/out/DOWN/frame_00050.jpg",
       "gx": 0,
-      "gy": -0.5104166666666666,
+      "gy": -0.5157894736842106,
       "clip": "DOWN",
       "frame": 50
     },
     {
       "path": "frames/out/DOWN/frame_00051.jpg",
       "gx": 0,
-      "gy": -0.5208333333333334,
+      "gy": -0.5263157894736842,
       "clip": "DOWN",
       "frame": 51
     },
     {
       "path": "frames/out/DOWN/frame_00052.jpg",
       "gx": 0,
-      "gy": -0.53125,
+      "gy": -0.5368421052631579,
       "clip": "DOWN",
       "frame": 52
     },
     {
       "path": "frames/out/DOWN/frame_00053.jpg",
       "gx": 0,
-      "gy": -0.5416666666666666,
+      "gy": -0.5473684210526316,
       "clip": "DOWN",
       "frame": 53
     },
     {
       "path": "frames/out/DOWN/frame_00054.jpg",
       "gx": 0,
-      "gy": -0.5520833333333334,
+      "gy": -0.5578947368421052,
       "clip": "DOWN",
       "frame": 54
     },
     {
       "path": "frames/out/DOWN/frame_00055.jpg",
       "gx": 0,
-      "gy": -0.5625,
+      "gy": -0.5684210526315789,
       "clip": "DOWN",
       "frame": 55
     },
     {
       "path": "frames/out/DOWN/frame_00056.jpg",
       "gx": 0,
-      "gy": -0.5729166666666666,
+      "gy": -0.5789473684210527,
       "clip": "DOWN",
       "frame": 56
     },
     {
       "path": "frames/out/DOWN/frame_00057.jpg",
       "gx": 0,
-      "gy": -0.5833333333333334,
+      "gy": -0.5894736842105263,
       "clip": "DOWN",
       "frame": 57
     },
     {
       "path": "frames/out/DOWN/frame_00058.jpg",
       "gx": 0,
-      "gy": -0.59375,
+      "gy": -0.6,
       "clip": "DOWN",
       "frame": 58
     },
     {
       "path": "frames/out/DOWN/frame_00059.jpg",
       "gx": 0,
-      "gy": -0.6041666666666666,
+      "gy": -0.6105263157894737,
       "clip": "DOWN",
       "frame": 59
     },
     {
       "path": "frames/out/DOWN/frame_00060.jpg",
       "gx": 0,
-      "gy": -0.6145833333333334,
+      "gy": -0.6210526315789474,
       "clip": "DOWN",
       "frame": 60
     },
     {
       "path": "frames/out/DOWN/frame_00061.jpg",
       "gx": 0,
-      "gy": -0.625,
+      "gy": -0.631578947368421,
       "clip": "DOWN",
       "frame": 61
     },
     {
       "path": "frames/out/DOWN/frame_00062.jpg",
       "gx": 0,
-      "gy": -0.6354166666666666,
+      "gy": -0.6421052631578947,
       "clip": "DOWN",
       "frame": 62
     },
     {
       "path": "frames/out/DOWN/frame_00063.jpg",
       "gx": 0,
-      "gy": -0.6458333333333334,
+      "gy": -0.6526315789473685,
       "clip": "DOWN",
       "frame": 63
     },
     {
       "path": "frames/out/DOWN/frame_00064.jpg",
       "gx": 0,
-      "gy": -0.65625,
+      "gy": -0.6631578947368421,
       "clip": "DOWN",
       "frame": 64
     },
     {
       "path": "frames/out/DOWN/frame_00065.jpg",
       "gx": 0,
-      "gy": -0.6666666666666666,
+      "gy": -0.6736842105263158,
       "clip": "DOWN",
       "frame": 65
     },
     {
       "path": "frames/out/DOWN/frame_00066.jpg",
       "gx": 0,
-      "gy": -0.6770833333333334,
+      "gy": -0.6842105263157895,
       "clip": "DOWN",
       "frame": 66
     },
     {
       "path": "frames/out/DOWN/frame_00067.jpg",
       "gx": 0,
-      "gy": -0.6875,
+      "gy": -0.6947368421052632,
       "clip": "DOWN",
       "frame": 67
     },
     {
       "path": "frames/out/DOWN/frame_00068.jpg",
       "gx": 0,
-      "gy": -0.6979166666666666,
+      "gy": -0.7052631578947368,
       "clip": "DOWN",
       "frame": 68
     },
     {
       "path": "frames/out/DOWN/frame_00069.jpg",
       "gx": 0,
-      "gy": -0.7083333333333334,
+      "gy": -0.7157894736842105,
       "clip": "DOWN",
       "frame": 69
     },
     {
       "path": "frames/out/DOWN/frame_00070.jpg",
       "gx": 0,
-      "gy": -0.71875,
+      "gy": -0.7263157894736842,
       "clip": "DOWN",
       "frame": 70
     },
     {
       "path": "frames/out/DOWN/frame_00071.jpg",
       "gx": 0,
-      "gy": -0.7291666666666666,
+      "gy": -0.7368421052631579,
       "clip": "DOWN",
       "frame": 71
     },
     {
       "path": "frames/out/DOWN/frame_00072.jpg",
       "gx": 0,
-      "gy": -0.7395833333333334,
+      "gy": -0.7473684210526316,
       "clip": "DOWN",
       "frame": 72
     },
     {
       "path": "frames/out/DOWN/frame_00073.jpg",
       "gx": 0,
-      "gy": -0.75,
+      "gy": -0.7578947368421053,
       "clip": "DOWN",
       "frame": 73
     },
     {
       "path": "frames/out/DOWN/frame_00074.jpg",
       "gx": 0,
-      "gy": -0.7604166666666666,
+      "gy": -0.7684210526315789,
       "clip": "DOWN",
       "frame": 74
     },
     {
       "path": "frames/out/DOWN/frame_00075.jpg",
       "gx": 0,
-      "gy": -0.7708333333333334,
+      "gy": -0.7789473684210526,
       "clip": "DOWN",
       "frame": 75
     },
     {
       "path": "frames/out/DOWN/frame_00076.jpg",
       "gx": 0,
-      "gy": -0.78125,
+      "gy": -0.7894736842105263,
       "clip": "DOWN",
       "frame": 76
     },
     {
       "path": "frames/out/DOWN/frame_00077.jpg",
       "gx": 0,
-      "gy": -0.7916666666666666,
+      "gy": -0.8,
       "clip": "DOWN",
       "frame": 77
     },
     {
       "path": "frames/out/DOWN/frame_00078.jpg",
       "gx": 0,
-      "gy": -0.8020833333333334,
+      "gy": -0.8105263157894737,
       "clip": "DOWN",
       "frame": 78
     },
     {
       "path": "frames/out/DOWN/frame_00079.jpg",
       "gx": 0,
-      "gy": -0.8125,
+      "gy": -0.8210526315789474,
       "clip": "DOWN",
       "frame": 79
     },
     {
       "path": "frames/out/DOWN/frame_00080.jpg",
       "gx": 0,
-      "gy": -0.8229166666666666,
+      "gy": -0.8315789473684211,
       "clip": "DOWN",
       "frame": 80
     },
     {
       "path": "frames/out/DOWN/frame_00081.jpg",
       "gx": 0,
-      "gy": -0.8333333333333334,
+      "gy": -0.8421052631578947,
       "clip": "DOWN",
       "frame": 81
     },
     {
       "path": "frames/out/DOWN/frame_00082.jpg",
       "gx": 0,
-      "gy": -0.84375,
+      "gy": -0.8526315789473684,
       "clip": "DOWN",
       "frame": 82
     },
     {
       "path": "frames/out/DOWN/frame_00083.jpg",
       "gx": 0,
-      "gy": -0.8541666666666666,
+      "gy": -0.8631578947368421,
       "clip": "DOWN",
       "frame": 83
     },
     {
       "path": "frames/out/DOWN/frame_00084.jpg",
       "gx": 0,
-      "gy": -0.8645833333333334,
+      "gy": -0.8736842105263158,
       "clip": "DOWN",
       "frame": 84
     },
     {
       "path": "frames/out/DOWN/frame_00085.jpg",
       "gx": 0,
-      "gy": -0.875,
+      "gy": -0.8842105263157894,
       "clip": "DOWN",
       "frame": 85
     },
     {
       "path": "frames/out/DOWN/frame_00086.jpg",
       "gx": 0,
-      "gy": -0.8854166666666666,
+      "gy": -0.8947368421052632,
       "clip": "DOWN",
       "frame": 86
     },
     {
       "path": "frames/out/DOWN/frame_00087.jpg",
       "gx": 0,
-      "gy": -0.8958333333333334,
+      "gy": -0.9052631578947369,
       "clip": "DOWN",
       "frame": 87
     },
     {
       "path": "frames/out/DOWN/frame_00088.jpg",
       "gx": 0,
-      "gy": -0.90625,
+      "gy": -0.9157894736842105,
       "clip": "DOWN",
       "frame": 88
     },
     {
       "path": "frames/out/DOWN/frame_00089.jpg",
       "gx": 0,
-      "gy": -0.9166666666666666,
+      "gy": -0.9263157894736842,
       "clip": "DOWN",
       "frame": 89
     },
     {
       "path": "frames/out/DOWN/frame_00090.jpg",
       "gx": 0,
-      "gy": -0.9270833333333334,
+      "gy": -0.9368421052631579,
       "clip": "DOWN",
       "frame": 90
     },
     {
       "path": "frames/out/DOWN/frame_00091.jpg",
       "gx": 0,
-      "gy": -0.9375,
+      "gy": -0.9473684210526315,
       "clip": "DOWN",
       "frame": 91
     },
     {
       "path": "frames/out/DOWN/frame_00092.jpg",
       "gx": 0,
-      "gy": -0.9479166666666666,
+      "gy": -0.9578947368421052,
       "clip": "DOWN",
       "frame": 92
     },
     {
       "path": "frames/out/DOWN/frame_00093.jpg",
       "gx": 0,
-      "gy": -0.9583333333333334,
+      "gy": -0.968421052631579,
       "clip": "DOWN",
       "frame": 93
     },
     {
       "path": "frames/out/DOWN/frame_00094.jpg",
       "gx": 0,
-      "gy": -0.96875,
+      "gy": -0.9789473684210527,
       "clip": "DOWN",
       "frame": 94
     },
     {
       "path": "frames/out/DOWN/frame_00095.jpg",
       "gx": 0,
-      "gy": -0.9791666666666666,
+      "gy": -0.9894736842105263,
       "clip": "DOWN",
       "frame": 95
     },
     {
       "path": "frames/out/DOWN/frame_00096.jpg",
       "gx": 0,
-      "gy": -0.9895833333333334,
-      "clip": "DOWN",
-      "frame": 96
-    },
-    {
-      "path": "frames/out/DOWN/frame_00097.jpg",
-      "gx": 0,
       "gy": -1,
       "clip": "DOWN",
-      "frame": 97
+      "frame": 96
     },
     {
       "path": "frames/out/DOWN__REV/frame_00001.jpg",
@@ -3408,674 +3387,667 @@
     {
       "path": "frames/out/DOWN__REV/frame_00002.jpg",
       "gx": 0,
-      "gy": -0.9895833333333334,
+      "gy": -0.9894736842105263,
       "clip": "DOWN__REV",
       "frame": 2
     },
     {
       "path": "frames/out/DOWN__REV/frame_00003.jpg",
       "gx": 0,
-      "gy": -0.9791666666666666,
+      "gy": -0.9789473684210527,
       "clip": "DOWN__REV",
       "frame": 3
     },
     {
       "path": "frames/out/DOWN__REV/frame_00004.jpg",
       "gx": 0,
-      "gy": -0.96875,
+      "gy": -0.968421052631579,
       "clip": "DOWN__REV",
       "frame": 4
     },
     {
       "path": "frames/out/DOWN__REV/frame_00005.jpg",
       "gx": 0,
-      "gy": -0.9583333333333334,
+      "gy": -0.9578947368421052,
       "clip": "DOWN__REV",
       "frame": 5
     },
     {
       "path": "frames/out/DOWN__REV/frame_00006.jpg",
       "gx": 0,
-      "gy": -0.9479166666666666,
+      "gy": -0.9473684210526316,
       "clip": "DOWN__REV",
       "frame": 6
     },
     {
       "path": "frames/out/DOWN__REV/frame_00007.jpg",
       "gx": 0,
-      "gy": -0.9375,
+      "gy": -0.9368421052631579,
       "clip": "DOWN__REV",
       "frame": 7
     },
     {
       "path": "frames/out/DOWN__REV/frame_00008.jpg",
       "gx": 0,
-      "gy": -0.9270833333333334,
+      "gy": -0.9263157894736842,
       "clip": "DOWN__REV",
       "frame": 8
     },
     {
       "path": "frames/out/DOWN__REV/frame_00009.jpg",
       "gx": 0,
-      "gy": -0.9166666666666666,
+      "gy": -0.9157894736842105,
       "clip": "DOWN__REV",
       "frame": 9
     },
     {
       "path": "frames/out/DOWN__REV/frame_00010.jpg",
       "gx": 0,
-      "gy": -0.90625,
+      "gy": -0.9052631578947369,
       "clip": "DOWN__REV",
       "frame": 10
     },
     {
       "path": "frames/out/DOWN__REV/frame_00011.jpg",
       "gx": 0,
-      "gy": -0.8958333333333334,
+      "gy": -0.8947368421052632,
       "clip": "DOWN__REV",
       "frame": 11
     },
     {
       "path": "frames/out/DOWN__REV/frame_00012.jpg",
       "gx": 0,
-      "gy": -0.8854166666666666,
+      "gy": -0.8842105263157894,
       "clip": "DOWN__REV",
       "frame": 12
     },
     {
       "path": "frames/out/DOWN__REV/frame_00013.jpg",
       "gx": 0,
-      "gy": -0.875,
+      "gy": -0.8736842105263158,
       "clip": "DOWN__REV",
       "frame": 13
     },
     {
       "path": "frames/out/DOWN__REV/frame_00014.jpg",
       "gx": 0,
-      "gy": -0.8645833333333334,
+      "gy": -0.8631578947368421,
       "clip": "DOWN__REV",
       "frame": 14
     },
     {
       "path": "frames/out/DOWN__REV/frame_00015.jpg",
       "gx": 0,
-      "gy": -0.8541666666666666,
+      "gy": -0.8526315789473684,
       "clip": "DOWN__REV",
       "frame": 15
     },
     {
       "path": "frames/out/DOWN__REV/frame_00016.jpg",
       "gx": 0,
-      "gy": -0.84375,
+      "gy": -0.8421052631578947,
       "clip": "DOWN__REV",
       "frame": 16
     },
     {
       "path": "frames/out/DOWN__REV/frame_00017.jpg",
       "gx": 0,
-      "gy": -0.8333333333333334,
+      "gy": -0.8315789473684211,
       "clip": "DOWN__REV",
       "frame": 17
     },
     {
       "path": "frames/out/DOWN__REV/frame_00018.jpg",
       "gx": 0,
-      "gy": -0.8229166666666666,
+      "gy": -0.8210526315789474,
       "clip": "DOWN__REV",
       "frame": 18
     },
     {
       "path": "frames/out/DOWN__REV/frame_00019.jpg",
       "gx": 0,
-      "gy": -0.8125,
+      "gy": -0.8105263157894737,
       "clip": "DOWN__REV",
       "frame": 19
     },
     {
       "path": "frames/out/DOWN__REV/frame_00020.jpg",
       "gx": 0,
-      "gy": -0.8020833333333334,
+      "gy": -0.8,
       "clip": "DOWN__REV",
       "frame": 20
     },
     {
       "path": "frames/out/DOWN__REV/frame_00021.jpg",
       "gx": 0,
-      "gy": -0.7916666666666666,
+      "gy": -0.7894736842105263,
       "clip": "DOWN__REV",
       "frame": 21
     },
     {
       "path": "frames/out/DOWN__REV/frame_00022.jpg",
       "gx": 0,
-      "gy": -0.78125,
+      "gy": -0.7789473684210526,
       "clip": "DOWN__REV",
       "frame": 22
     },
     {
       "path": "frames/out/DOWN__REV/frame_00023.jpg",
       "gx": 0,
-      "gy": -0.7708333333333334,
+      "gy": -0.7684210526315789,
       "clip": "DOWN__REV",
       "frame": 23
     },
     {
       "path": "frames/out/DOWN__REV/frame_00024.jpg",
       "gx": 0,
-      "gy": -0.7604166666666666,
+      "gy": -0.7578947368421053,
       "clip": "DOWN__REV",
       "frame": 24
     },
     {
       "path": "frames/out/DOWN__REV/frame_00025.jpg",
       "gx": 0,
-      "gy": -0.75,
+      "gy": -0.7473684210526316,
       "clip": "DOWN__REV",
       "frame": 25
     },
     {
       "path": "frames/out/DOWN__REV/frame_00026.jpg",
       "gx": 0,
-      "gy": -0.7395833333333333,
+      "gy": -0.736842105263158,
       "clip": "DOWN__REV",
       "frame": 26
     },
     {
       "path": "frames/out/DOWN__REV/frame_00027.jpg",
       "gx": 0,
-      "gy": -0.7291666666666667,
+      "gy": -0.7263157894736842,
       "clip": "DOWN__REV",
       "frame": 27
     },
     {
       "path": "frames/out/DOWN__REV/frame_00028.jpg",
       "gx": 0,
-      "gy": -0.71875,
+      "gy": -0.7157894736842105,
       "clip": "DOWN__REV",
       "frame": 28
     },
     {
       "path": "frames/out/DOWN__REV/frame_00029.jpg",
       "gx": 0,
-      "gy": -0.7083333333333333,
+      "gy": -0.7052631578947368,
       "clip": "DOWN__REV",
       "frame": 29
     },
     {
       "path": "frames/out/DOWN__REV/frame_00030.jpg",
       "gx": 0,
-      "gy": -0.6979166666666667,
+      "gy": -0.6947368421052631,
       "clip": "DOWN__REV",
       "frame": 30
     },
     {
       "path": "frames/out/DOWN__REV/frame_00031.jpg",
       "gx": 0,
-      "gy": -0.6875,
+      "gy": -0.6842105263157895,
       "clip": "DOWN__REV",
       "frame": 31
     },
     {
       "path": "frames/out/DOWN__REV/frame_00032.jpg",
       "gx": 0,
-      "gy": -0.6770833333333333,
+      "gy": -0.6736842105263158,
       "clip": "DOWN__REV",
       "frame": 32
     },
     {
       "path": "frames/out/DOWN__REV/frame_00033.jpg",
       "gx": 0,
-      "gy": -0.6666666666666667,
+      "gy": -0.6631578947368422,
       "clip": "DOWN__REV",
       "frame": 33
     },
     {
       "path": "frames/out/DOWN__REV/frame_00034.jpg",
       "gx": 0,
-      "gy": -0.65625,
+      "gy": -0.6526315789473685,
       "clip": "DOWN__REV",
       "frame": 34
     },
     {
       "path": "frames/out/DOWN__REV/frame_00035.jpg",
       "gx": 0,
-      "gy": -0.6458333333333333,
+      "gy": -0.6421052631578947,
       "clip": "DOWN__REV",
       "frame": 35
     },
     {
       "path": "frames/out/DOWN__REV/frame_00036.jpg",
       "gx": 0,
-      "gy": -0.6354166666666667,
+      "gy": -0.631578947368421,
       "clip": "DOWN__REV",
       "frame": 36
     },
     {
       "path": "frames/out/DOWN__REV/frame_00037.jpg",
       "gx": 0,
-      "gy": -0.625,
+      "gy": -0.6210526315789473,
       "clip": "DOWN__REV",
       "frame": 37
     },
     {
       "path": "frames/out/DOWN__REV/frame_00038.jpg",
       "gx": 0,
-      "gy": -0.6145833333333333,
+      "gy": -0.6105263157894737,
       "clip": "DOWN__REV",
       "frame": 38
     },
     {
       "path": "frames/out/DOWN__REV/frame_00039.jpg",
       "gx": 0,
-      "gy": -0.6041666666666667,
+      "gy": -0.6,
       "clip": "DOWN__REV",
       "frame": 39
     },
     {
       "path": "frames/out/DOWN__REV/frame_00040.jpg",
       "gx": 0,
-      "gy": -0.59375,
+      "gy": -0.5894736842105264,
       "clip": "DOWN__REV",
       "frame": 40
     },
     {
       "path": "frames/out/DOWN__REV/frame_00041.jpg",
       "gx": 0,
-      "gy": -0.5833333333333333,
+      "gy": -0.5789473684210527,
       "clip": "DOWN__REV",
       "frame": 41
     },
     {
       "path": "frames/out/DOWN__REV/frame_00042.jpg",
       "gx": 0,
-      "gy": -0.5729166666666667,
+      "gy": -0.5684210526315789,
       "clip": "DOWN__REV",
       "frame": 42
     },
     {
       "path": "frames/out/DOWN__REV/frame_00043.jpg",
       "gx": 0,
-      "gy": -0.5625,
+      "gy": -0.5578947368421052,
       "clip": "DOWN__REV",
       "frame": 43
     },
     {
       "path": "frames/out/DOWN__REV/frame_00044.jpg",
       "gx": 0,
-      "gy": -0.5520833333333333,
+      "gy": -0.5473684210526315,
       "clip": "DOWN__REV",
       "frame": 44
     },
     {
       "path": "frames/out/DOWN__REV/frame_00045.jpg",
       "gx": 0,
-      "gy": -0.5416666666666667,
+      "gy": -0.5368421052631579,
       "clip": "DOWN__REV",
       "frame": 45
     },
     {
       "path": "frames/out/DOWN__REV/frame_00046.jpg",
       "gx": 0,
-      "gy": -0.53125,
+      "gy": -0.5263157894736843,
       "clip": "DOWN__REV",
       "frame": 46
     },
     {
       "path": "frames/out/DOWN__REV/frame_00047.jpg",
       "gx": 0,
-      "gy": -0.5208333333333333,
+      "gy": -0.5157894736842106,
       "clip": "DOWN__REV",
       "frame": 47
     },
     {
       "path": "frames/out/DOWN__REV/frame_00048.jpg",
       "gx": 0,
-      "gy": -0.5104166666666667,
+      "gy": -0.5052631578947369,
       "clip": "DOWN__REV",
       "frame": 48
     },
     {
       "path": "frames/out/DOWN__REV/frame_00049.jpg",
       "gx": 0,
-      "gy": -0.5,
+      "gy": -0.49473684210526314,
       "clip": "DOWN__REV",
       "frame": 49
     },
     {
       "path": "frames/out/DOWN__REV/frame_00050.jpg",
       "gx": 0,
-      "gy": -0.48958333333333337,
+      "gy": -0.4842105263157894,
       "clip": "DOWN__REV",
       "frame": 50
     },
     {
       "path": "frames/out/DOWN__REV/frame_00051.jpg",
       "gx": 0,
-      "gy": -0.47916666666666663,
+      "gy": -0.4736842105263158,
       "clip": "DOWN__REV",
       "frame": 51
     },
     {
       "path": "frames/out/DOWN__REV/frame_00052.jpg",
       "gx": 0,
-      "gy": -0.46875,
+      "gy": -0.4631578947368421,
       "clip": "DOWN__REV",
       "frame": 52
     },
     {
       "path": "frames/out/DOWN__REV/frame_00053.jpg",
       "gx": 0,
-      "gy": -0.45833333333333337,
+      "gy": -0.4526315789473684,
       "clip": "DOWN__REV",
       "frame": 53
     },
     {
       "path": "frames/out/DOWN__REV/frame_00054.jpg",
       "gx": 0,
-      "gy": -0.44791666666666663,
+      "gy": -0.4421052631578948,
       "clip": "DOWN__REV",
       "frame": 54
     },
     {
       "path": "frames/out/DOWN__REV/frame_00055.jpg",
       "gx": 0,
-      "gy": -0.4375,
+      "gy": -0.43157894736842106,
       "clip": "DOWN__REV",
       "frame": 55
     },
     {
       "path": "frames/out/DOWN__REV/frame_00056.jpg",
       "gx": 0,
-      "gy": -0.42708333333333337,
+      "gy": -0.42105263157894735,
       "clip": "DOWN__REV",
       "frame": 56
     },
     {
       "path": "frames/out/DOWN__REV/frame_00057.jpg",
       "gx": 0,
-      "gy": -0.41666666666666663,
+      "gy": -0.41052631578947374,
       "clip": "DOWN__REV",
       "frame": 57
     },
     {
       "path": "frames/out/DOWN__REV/frame_00058.jpg",
       "gx": 0,
-      "gy": -0.40625,
+      "gy": -0.4,
       "clip": "DOWN__REV",
       "frame": 58
     },
     {
       "path": "frames/out/DOWN__REV/frame_00059.jpg",
       "gx": 0,
-      "gy": -0.39583333333333337,
+      "gy": -0.3894736842105263,
       "clip": "DOWN__REV",
       "frame": 59
     },
     {
       "path": "frames/out/DOWN__REV/frame_00060.jpg",
       "gx": 0,
-      "gy": -0.38541666666666663,
+      "gy": -0.3789473684210526,
       "clip": "DOWN__REV",
       "frame": 60
     },
     {
       "path": "frames/out/DOWN__REV/frame_00061.jpg",
       "gx": 0,
-      "gy": -0.375,
+      "gy": -0.368421052631579,
       "clip": "DOWN__REV",
       "frame": 61
     },
     {
       "path": "frames/out/DOWN__REV/frame_00062.jpg",
       "gx": 0,
-      "gy": -0.36458333333333337,
+      "gy": -0.35789473684210527,
       "clip": "DOWN__REV",
       "frame": 62
     },
     {
       "path": "frames/out/DOWN__REV/frame_00063.jpg",
       "gx": 0,
-      "gy": -0.35416666666666663,
+      "gy": -0.34736842105263155,
       "clip": "DOWN__REV",
       "frame": 63
     },
     {
       "path": "frames/out/DOWN__REV/frame_00064.jpg",
       "gx": 0,
-      "gy": -0.34375,
+      "gy": -0.33684210526315794,
       "clip": "DOWN__REV",
       "frame": 64
     },
     {
       "path": "frames/out/DOWN__REV/frame_00065.jpg",
       "gx": 0,
-      "gy": -0.33333333333333337,
+      "gy": -0.3263157894736842,
       "clip": "DOWN__REV",
       "frame": 65
     },
     {
       "path": "frames/out/DOWN__REV/frame_00066.jpg",
       "gx": 0,
-      "gy": -0.32291666666666663,
+      "gy": -0.3157894736842105,
       "clip": "DOWN__REV",
       "frame": 66
     },
     {
       "path": "frames/out/DOWN__REV/frame_00067.jpg",
       "gx": 0,
-      "gy": -0.3125,
+      "gy": -0.3052631578947368,
       "clip": "DOWN__REV",
       "frame": 67
     },
     {
       "path": "frames/out/DOWN__REV/frame_00068.jpg",
       "gx": 0,
-      "gy": -0.30208333333333337,
+      "gy": -0.2947368421052632,
       "clip": "DOWN__REV",
       "frame": 68
     },
     {
       "path": "frames/out/DOWN__REV/frame_00069.jpg",
       "gx": 0,
-      "gy": -0.29166666666666663,
+      "gy": -0.28421052631578947,
       "clip": "DOWN__REV",
       "frame": 69
     },
     {
       "path": "frames/out/DOWN__REV/frame_00070.jpg",
       "gx": 0,
-      "gy": -0.28125,
+      "gy": -0.27368421052631575,
       "clip": "DOWN__REV",
       "frame": 70
     },
     {
       "path": "frames/out/DOWN__REV/frame_00071.jpg",
       "gx": 0,
-      "gy": -0.27083333333333337,
+      "gy": -0.26315789473684215,
       "clip": "DOWN__REV",
       "frame": 71
     },
     {
       "path": "frames/out/DOWN__REV/frame_00072.jpg",
       "gx": 0,
-      "gy": -0.26041666666666663,
+      "gy": -0.25263157894736843,
       "clip": "DOWN__REV",
       "frame": 72
     },
     {
       "path": "frames/out/DOWN__REV/frame_00073.jpg",
       "gx": 0,
-      "gy": -0.25,
+      "gy": -0.2421052631578947,
       "clip": "DOWN__REV",
       "frame": 73
     },
     {
       "path": "frames/out/DOWN__REV/frame_00074.jpg",
       "gx": 0,
-      "gy": -0.23958333333333337,
+      "gy": -0.2315789473684211,
       "clip": "DOWN__REV",
       "frame": 74
     },
     {
       "path": "frames/out/DOWN__REV/frame_00075.jpg",
       "gx": 0,
-      "gy": -0.22916666666666663,
+      "gy": -0.2210526315789474,
       "clip": "DOWN__REV",
       "frame": 75
     },
     {
       "path": "frames/out/DOWN__REV/frame_00076.jpg",
       "gx": 0,
-      "gy": -0.21875,
+      "gy": -0.21052631578947367,
       "clip": "DOWN__REV",
       "frame": 76
     },
     {
       "path": "frames/out/DOWN__REV/frame_00077.jpg",
       "gx": 0,
-      "gy": -0.20833333333333337,
+      "gy": -0.19999999999999996,
       "clip": "DOWN__REV",
       "frame": 77
     },
     {
       "path": "frames/out/DOWN__REV/frame_00078.jpg",
       "gx": 0,
-      "gy": -0.19791666666666663,
+      "gy": -0.18947368421052635,
       "clip": "DOWN__REV",
       "frame": 78
     },
     {
       "path": "frames/out/DOWN__REV/frame_00079.jpg",
       "gx": 0,
-      "gy": -0.1875,
+      "gy": -0.17894736842105263,
       "clip": "DOWN__REV",
       "frame": 79
     },
     {
       "path": "frames/out/DOWN__REV/frame_00080.jpg",
       "gx": 0,
-      "gy": -0.17708333333333337,
+      "gy": -0.16842105263157892,
       "clip": "DOWN__REV",
       "frame": 80
     },
     {
       "path": "frames/out/DOWN__REV/frame_00081.jpg",
       "gx": 0,
-      "gy": -0.16666666666666663,
+      "gy": -0.1578947368421053,
       "clip": "DOWN__REV",
       "frame": 81
     },
     {
       "path": "frames/out/DOWN__REV/frame_00082.jpg",
       "gx": 0,
-      "gy": -0.15625,
+      "gy": -0.1473684210526316,
       "clip": "DOWN__REV",
       "frame": 82
     },
     {
       "path": "frames/out/DOWN__REV/frame_00083.jpg",
       "gx": 0,
-      "gy": -0.14583333333333337,
+      "gy": -0.13684210526315788,
       "clip": "DOWN__REV",
       "frame": 83
     },
     {
       "path": "frames/out/DOWN__REV/frame_00084.jpg",
       "gx": 0,
-      "gy": -0.13541666666666663,
+      "gy": -0.12631578947368416,
       "clip": "DOWN__REV",
       "frame": 84
     },
     {
       "path": "frames/out/DOWN__REV/frame_00085.jpg",
       "gx": 0,
-      "gy": -0.125,
+      "gy": -0.11578947368421055,
       "clip": "DOWN__REV",
       "frame": 85
     },
     {
       "path": "frames/out/DOWN__REV/frame_00086.jpg",
       "gx": 0,
-      "gy": -0.11458333333333337,
+      "gy": -0.10526315789473684,
       "clip": "DOWN__REV",
       "frame": 86
     },
     {
       "path": "frames/out/DOWN__REV/frame_00087.jpg",
       "gx": 0,
-      "gy": -0.10416666666666663,
+      "gy": -0.09473684210526312,
       "clip": "DOWN__REV",
       "frame": 87
     },
     {
       "path": "frames/out/DOWN__REV/frame_00088.jpg",
       "gx": 0,
-      "gy": -0.09375,
+      "gy": -0.08421052631578951,
       "clip": "DOWN__REV",
       "frame": 88
     },
     {
       "path": "frames/out/DOWN__REV/frame_00089.jpg",
       "gx": 0,
-      "gy": -0.08333333333333337,
+      "gy": -0.0736842105263158,
       "clip": "DOWN__REV",
       "frame": 89
     },
     {
       "path": "frames/out/DOWN__REV/frame_00090.jpg",
       "gx": 0,
-      "gy": -0.07291666666666663,
+      "gy": -0.06315789473684208,
       "clip": "DOWN__REV",
       "frame": 90
     },
     {
       "path": "frames/out/DOWN__REV/frame_00091.jpg",
       "gx": 0,
-      "gy": -0.0625,
+      "gy": -0.052631578947368474,
       "clip": "DOWN__REV",
       "frame": 91
     },
     {
       "path": "frames/out/DOWN__REV/frame_00092.jpg",
       "gx": 0,
-      "gy": -0.05208333333333337,
+      "gy": -0.04210526315789476,
       "clip": "DOWN__REV",
       "frame": 92
     },
     {
       "path": "frames/out/DOWN__REV/frame_00093.jpg",
       "gx": 0,
-      "gy": -0.04166666666666663,
+      "gy": -0.03157894736842104,
       "clip": "DOWN__REV",
       "frame": 93
     },
     {
       "path": "frames/out/DOWN__REV/frame_00094.jpg",
       "gx": 0,
-      "gy": -0.03125,
+      "gy": -0.021052631578947323,
       "clip": "DOWN__REV",
       "frame": 94
     },
     {
       "path": "frames/out/DOWN__REV/frame_00095.jpg",
       "gx": 0,
-      "gy": -0.02083333333333337,
+      "gy": -0.010526315789473717,
       "clip": "DOWN__REV",
       "frame": 95
     },
     {
       "path": "frames/out/DOWN__REV/frame_00096.jpg",
       "gx": 0,
-      "gy": -0.01041666666666663,
-      "clip": "DOWN__REV",
-      "frame": 96
-    },
-    {
-      "path": "frames/out/DOWN__REV/frame_00097.jpg",
-      "gx": 0,
       "gy": 0,
       "clip": "DOWN__REV",
-      "frame": 97
+      "frame": 96
     },
     {
       "path": "frames/out/UP/frame_00001.jpg",
@@ -6816,675 +6788,668 @@
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00002.jpg",
-      "gx": 0.010416666666666666,
-      "gy": -0.9895833333333334,
+      "gx": 0.010526315789473684,
+      "gy": -0.9894736842105263,
       "clip": "DOWN-RIGHT",
       "frame": 2
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00003.jpg",
-      "gx": 0.020833333333333332,
-      "gy": -0.9791666666666666,
+      "gx": 0.021052631578947368,
+      "gy": -0.9789473684210527,
       "clip": "DOWN-RIGHT",
       "frame": 3
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00004.jpg",
-      "gx": 0.03125,
-      "gy": -0.96875,
+      "gx": 0.031578947368421054,
+      "gy": -0.968421052631579,
       "clip": "DOWN-RIGHT",
       "frame": 4
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00005.jpg",
-      "gx": 0.041666666666666664,
-      "gy": -0.9583333333333334,
+      "gx": 0.042105263157894736,
+      "gy": -0.9578947368421052,
       "clip": "DOWN-RIGHT",
       "frame": 5
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00006.jpg",
-      "gx": 0.052083333333333336,
-      "gy": -0.9479166666666666,
+      "gx": 0.05263157894736842,
+      "gy": -0.9473684210526316,
       "clip": "DOWN-RIGHT",
       "frame": 6
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00007.jpg",
-      "gx": 0.0625,
-      "gy": -0.9375,
+      "gx": 0.06315789473684211,
+      "gy": -0.9368421052631579,
       "clip": "DOWN-RIGHT",
       "frame": 7
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00008.jpg",
-      "gx": 0.07291666666666667,
-      "gy": -0.9270833333333334,
+      "gx": 0.07368421052631578,
+      "gy": -0.9263157894736842,
       "clip": "DOWN-RIGHT",
       "frame": 8
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00009.jpg",
-      "gx": 0.08333333333333333,
-      "gy": -0.9166666666666666,
+      "gx": 0.08421052631578947,
+      "gy": -0.9157894736842105,
       "clip": "DOWN-RIGHT",
       "frame": 9
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00010.jpg",
-      "gx": 0.09375,
-      "gy": -0.90625,
+      "gx": 0.09473684210526316,
+      "gy": -0.9052631578947369,
       "clip": "DOWN-RIGHT",
       "frame": 10
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00011.jpg",
-      "gx": 0.10416666666666667,
-      "gy": -0.8958333333333334,
+      "gx": 0.10526315789473684,
+      "gy": -0.8947368421052632,
       "clip": "DOWN-RIGHT",
       "frame": 11
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00012.jpg",
-      "gx": 0.11458333333333333,
-      "gy": -0.8854166666666666,
+      "gx": 0.11578947368421053,
+      "gy": -0.8842105263157894,
       "clip": "DOWN-RIGHT",
       "frame": 12
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00013.jpg",
-      "gx": 0.125,
-      "gy": -0.875,
+      "gx": 0.12631578947368421,
+      "gy": -0.8736842105263158,
       "clip": "DOWN-RIGHT",
       "frame": 13
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00014.jpg",
-      "gx": 0.13541666666666666,
-      "gy": -0.8645833333333334,
+      "gx": 0.1368421052631579,
+      "gy": -0.8631578947368421,
       "clip": "DOWN-RIGHT",
       "frame": 14
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00015.jpg",
-      "gx": 0.14583333333333334,
-      "gy": -0.8541666666666666,
+      "gx": 0.14736842105263157,
+      "gy": -0.8526315789473684,
       "clip": "DOWN-RIGHT",
       "frame": 15
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00016.jpg",
-      "gx": 0.15625,
-      "gy": -0.84375,
+      "gx": 0.15789473684210525,
+      "gy": -0.8421052631578947,
       "clip": "DOWN-RIGHT",
       "frame": 16
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00017.jpg",
-      "gx": 0.16666666666666666,
-      "gy": -0.8333333333333334,
+      "gx": 0.16842105263157894,
+      "gy": -0.8315789473684211,
       "clip": "DOWN-RIGHT",
       "frame": 17
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00018.jpg",
-      "gx": 0.17708333333333334,
-      "gy": -0.8229166666666666,
+      "gx": 0.17894736842105263,
+      "gy": -0.8210526315789474,
       "clip": "DOWN-RIGHT",
       "frame": 18
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00019.jpg",
-      "gx": 0.1875,
-      "gy": -0.8125,
+      "gx": 0.18947368421052632,
+      "gy": -0.8105263157894737,
       "clip": "DOWN-RIGHT",
       "frame": 19
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00020.jpg",
-      "gx": 0.19791666666666666,
-      "gy": -0.8020833333333334,
+      "gx": 0.2,
+      "gy": -0.8,
       "clip": "DOWN-RIGHT",
       "frame": 20
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00021.jpg",
-      "gx": 0.20833333333333334,
-      "gy": -0.7916666666666666,
+      "gx": 0.21052631578947367,
+      "gy": -0.7894736842105263,
       "clip": "DOWN-RIGHT",
       "frame": 21
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00022.jpg",
-      "gx": 0.21875,
-      "gy": -0.78125,
+      "gx": 0.22105263157894736,
+      "gy": -0.7789473684210526,
       "clip": "DOWN-RIGHT",
       "frame": 22
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00023.jpg",
-      "gx": 0.22916666666666666,
-      "gy": -0.7708333333333334,
+      "gx": 0.23157894736842105,
+      "gy": -0.7684210526315789,
       "clip": "DOWN-RIGHT",
       "frame": 23
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00024.jpg",
-      "gx": 0.23958333333333334,
-      "gy": -0.7604166666666666,
+      "gx": 0.24210526315789474,
+      "gy": -0.7578947368421053,
       "clip": "DOWN-RIGHT",
       "frame": 24
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00025.jpg",
-      "gx": 0.25,
-      "gy": -0.75,
+      "gx": 0.25263157894736843,
+      "gy": -0.7473684210526316,
       "clip": "DOWN-RIGHT",
       "frame": 25
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00026.jpg",
-      "gx": 0.2604166666666667,
-      "gy": -0.7395833333333333,
+      "gx": 0.2631578947368421,
+      "gy": -0.736842105263158,
       "clip": "DOWN-RIGHT",
       "frame": 26
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00027.jpg",
-      "gx": 0.2708333333333333,
-      "gy": -0.7291666666666667,
+      "gx": 0.2736842105263158,
+      "gy": -0.7263157894736842,
       "clip": "DOWN-RIGHT",
       "frame": 27
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00028.jpg",
-      "gx": 0.28125,
-      "gy": -0.71875,
+      "gx": 0.28421052631578947,
+      "gy": -0.7157894736842105,
       "clip": "DOWN-RIGHT",
       "frame": 28
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00029.jpg",
-      "gx": 0.2916666666666667,
-      "gy": -0.7083333333333333,
+      "gx": 0.29473684210526313,
+      "gy": -0.7052631578947368,
       "clip": "DOWN-RIGHT",
       "frame": 29
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00030.jpg",
-      "gx": 0.3020833333333333,
-      "gy": -0.6979166666666667,
+      "gx": 0.30526315789473685,
+      "gy": -0.6947368421052631,
       "clip": "DOWN-RIGHT",
       "frame": 30
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00031.jpg",
-      "gx": 0.3125,
-      "gy": -0.6875,
+      "gx": 0.3157894736842105,
+      "gy": -0.6842105263157895,
       "clip": "DOWN-RIGHT",
       "frame": 31
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00032.jpg",
-      "gx": 0.3229166666666667,
-      "gy": -0.6770833333333333,
+      "gx": 0.3263157894736842,
+      "gy": -0.6736842105263158,
       "clip": "DOWN-RIGHT",
       "frame": 32
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00033.jpg",
-      "gx": 0.3333333333333333,
-      "gy": -0.6666666666666667,
+      "gx": 0.3368421052631579,
+      "gy": -0.6631578947368422,
       "clip": "DOWN-RIGHT",
       "frame": 33
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00034.jpg",
-      "gx": 0.34375,
-      "gy": -0.65625,
+      "gx": 0.3473684210526316,
+      "gy": -0.6526315789473685,
       "clip": "DOWN-RIGHT",
       "frame": 34
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00035.jpg",
-      "gx": 0.3541666666666667,
-      "gy": -0.6458333333333333,
+      "gx": 0.35789473684210527,
+      "gy": -0.6421052631578947,
       "clip": "DOWN-RIGHT",
       "frame": 35
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00036.jpg",
-      "gx": 0.3645833333333333,
-      "gy": -0.6354166666666667,
+      "gx": 0.3684210526315789,
+      "gy": -0.631578947368421,
       "clip": "DOWN-RIGHT",
       "frame": 36
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00037.jpg",
-      "gx": 0.375,
-      "gy": -0.625,
+      "gx": 0.37894736842105264,
+      "gy": -0.6210526315789473,
       "clip": "DOWN-RIGHT",
       "frame": 37
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00038.jpg",
-      "gx": 0.3854166666666667,
-      "gy": -0.6145833333333333,
+      "gx": 0.3894736842105263,
+      "gy": -0.6105263157894737,
       "clip": "DOWN-RIGHT",
       "frame": 38
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00039.jpg",
-      "gx": 0.3958333333333333,
-      "gy": -0.6041666666666667,
+      "gx": 0.4,
+      "gy": -0.6,
       "clip": "DOWN-RIGHT",
       "frame": 39
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00040.jpg",
-      "gx": 0.40625,
-      "gy": -0.59375,
+      "gx": 0.4105263157894737,
+      "gy": -0.5894736842105264,
       "clip": "DOWN-RIGHT",
       "frame": 40
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00041.jpg",
-      "gx": 0.4166666666666667,
-      "gy": -0.5833333333333333,
+      "gx": 0.42105263157894735,
+      "gy": -0.5789473684210527,
       "clip": "DOWN-RIGHT",
       "frame": 41
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00042.jpg",
-      "gx": 0.4270833333333333,
-      "gy": -0.5729166666666667,
+      "gx": 0.43157894736842106,
+      "gy": -0.5684210526315789,
       "clip": "DOWN-RIGHT",
       "frame": 42
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00043.jpg",
-      "gx": 0.4375,
-      "gy": -0.5625,
+      "gx": 0.4421052631578947,
+      "gy": -0.5578947368421052,
       "clip": "DOWN-RIGHT",
       "frame": 43
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00044.jpg",
-      "gx": 0.4479166666666667,
-      "gy": -0.5520833333333333,
+      "gx": 0.45263157894736844,
+      "gy": -0.5473684210526315,
       "clip": "DOWN-RIGHT",
       "frame": 44
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00045.jpg",
-      "gx": 0.4583333333333333,
-      "gy": -0.5416666666666667,
+      "gx": 0.4631578947368421,
+      "gy": -0.5368421052631579,
       "clip": "DOWN-RIGHT",
       "frame": 45
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00046.jpg",
-      "gx": 0.46875,
-      "gy": -0.53125,
+      "gx": 0.47368421052631576,
+      "gy": -0.5263157894736843,
       "clip": "DOWN-RIGHT",
       "frame": 46
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00047.jpg",
-      "gx": 0.4791666666666667,
-      "gy": -0.5208333333333333,
+      "gx": 0.4842105263157895,
+      "gy": -0.5157894736842106,
       "clip": "DOWN-RIGHT",
       "frame": 47
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00048.jpg",
-      "gx": 0.4895833333333333,
-      "gy": -0.5104166666666667,
+      "gx": 0.49473684210526314,
+      "gy": -0.5052631578947369,
       "clip": "DOWN-RIGHT",
       "frame": 48
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00049.jpg",
-      "gx": 0.5,
-      "gy": -0.5,
+      "gx": 0.5052631578947369,
+      "gy": -0.49473684210526314,
       "clip": "DOWN-RIGHT",
       "frame": 49
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00050.jpg",
-      "gx": 0.5104166666666666,
-      "gy": -0.48958333333333337,
+      "gx": 0.5157894736842106,
+      "gy": -0.4842105263157894,
       "clip": "DOWN-RIGHT",
       "frame": 50
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00051.jpg",
-      "gx": 0.5208333333333334,
-      "gy": -0.47916666666666663,
+      "gx": 0.5263157894736842,
+      "gy": -0.4736842105263158,
       "clip": "DOWN-RIGHT",
       "frame": 51
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00052.jpg",
-      "gx": 0.53125,
-      "gy": -0.46875,
+      "gx": 0.5368421052631579,
+      "gy": -0.4631578947368421,
       "clip": "DOWN-RIGHT",
       "frame": 52
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00053.jpg",
-      "gx": 0.5416666666666666,
-      "gy": -0.45833333333333337,
+      "gx": 0.5473684210526316,
+      "gy": -0.4526315789473684,
       "clip": "DOWN-RIGHT",
       "frame": 53
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00054.jpg",
-      "gx": 0.5520833333333334,
-      "gy": -0.44791666666666663,
+      "gx": 0.5578947368421052,
+      "gy": -0.4421052631578948,
       "clip": "DOWN-RIGHT",
       "frame": 54
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00055.jpg",
-      "gx": 0.5625,
-      "gy": -0.4375,
+      "gx": 0.5684210526315789,
+      "gy": -0.43157894736842106,
       "clip": "DOWN-RIGHT",
       "frame": 55
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00056.jpg",
-      "gx": 0.5729166666666666,
-      "gy": -0.42708333333333337,
+      "gx": 0.5789473684210527,
+      "gy": -0.42105263157894735,
       "clip": "DOWN-RIGHT",
       "frame": 56
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00057.jpg",
-      "gx": 0.5833333333333334,
-      "gy": -0.41666666666666663,
+      "gx": 0.5894736842105263,
+      "gy": -0.41052631578947374,
       "clip": "DOWN-RIGHT",
       "frame": 57
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00058.jpg",
-      "gx": 0.59375,
-      "gy": -0.40625,
+      "gx": 0.6,
+      "gy": -0.4,
       "clip": "DOWN-RIGHT",
       "frame": 58
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00059.jpg",
-      "gx": 0.6041666666666666,
-      "gy": -0.39583333333333337,
+      "gx": 0.6105263157894737,
+      "gy": -0.3894736842105263,
       "clip": "DOWN-RIGHT",
       "frame": 59
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00060.jpg",
-      "gx": 0.6145833333333334,
-      "gy": -0.38541666666666663,
+      "gx": 0.6210526315789474,
+      "gy": -0.3789473684210526,
       "clip": "DOWN-RIGHT",
       "frame": 60
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00061.jpg",
-      "gx": 0.625,
-      "gy": -0.375,
+      "gx": 0.631578947368421,
+      "gy": -0.368421052631579,
       "clip": "DOWN-RIGHT",
       "frame": 61
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00062.jpg",
-      "gx": 0.6354166666666666,
-      "gy": -0.36458333333333337,
+      "gx": 0.6421052631578947,
+      "gy": -0.35789473684210527,
       "clip": "DOWN-RIGHT",
       "frame": 62
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00063.jpg",
-      "gx": 0.6458333333333334,
-      "gy": -0.35416666666666663,
+      "gx": 0.6526315789473685,
+      "gy": -0.34736842105263155,
       "clip": "DOWN-RIGHT",
       "frame": 63
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00064.jpg",
-      "gx": 0.65625,
-      "gy": -0.34375,
+      "gx": 0.6631578947368421,
+      "gy": -0.33684210526315794,
       "clip": "DOWN-RIGHT",
       "frame": 64
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00065.jpg",
-      "gx": 0.6666666666666666,
-      "gy": -0.33333333333333337,
+      "gx": 0.6736842105263158,
+      "gy": -0.3263157894736842,
       "clip": "DOWN-RIGHT",
       "frame": 65
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00066.jpg",
-      "gx": 0.6770833333333334,
-      "gy": -0.32291666666666663,
+      "gx": 0.6842105263157895,
+      "gy": -0.3157894736842105,
       "clip": "DOWN-RIGHT",
       "frame": 66
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00067.jpg",
-      "gx": 0.6875,
-      "gy": -0.3125,
+      "gx": 0.6947368421052632,
+      "gy": -0.3052631578947368,
       "clip": "DOWN-RIGHT",
       "frame": 67
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00068.jpg",
-      "gx": 0.6979166666666666,
-      "gy": -0.30208333333333337,
+      "gx": 0.7052631578947368,
+      "gy": -0.2947368421052632,
       "clip": "DOWN-RIGHT",
       "frame": 68
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00069.jpg",
-      "gx": 0.7083333333333334,
-      "gy": -0.29166666666666663,
+      "gx": 0.7157894736842105,
+      "gy": -0.28421052631578947,
       "clip": "DOWN-RIGHT",
       "frame": 69
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00070.jpg",
-      "gx": 0.71875,
-      "gy": -0.28125,
+      "gx": 0.7263157894736842,
+      "gy": -0.27368421052631575,
       "clip": "DOWN-RIGHT",
       "frame": 70
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00071.jpg",
-      "gx": 0.7291666666666666,
-      "gy": -0.27083333333333337,
+      "gx": 0.7368421052631579,
+      "gy": -0.26315789473684215,
       "clip": "DOWN-RIGHT",
       "frame": 71
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00072.jpg",
-      "gx": 0.7395833333333334,
-      "gy": -0.26041666666666663,
+      "gx": 0.7473684210526316,
+      "gy": -0.25263157894736843,
       "clip": "DOWN-RIGHT",
       "frame": 72
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00073.jpg",
-      "gx": 0.75,
-      "gy": -0.25,
+      "gx": 0.7578947368421053,
+      "gy": -0.2421052631578947,
       "clip": "DOWN-RIGHT",
       "frame": 73
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00074.jpg",
-      "gx": 0.7604166666666666,
-      "gy": -0.23958333333333337,
+      "gx": 0.7684210526315789,
+      "gy": -0.2315789473684211,
       "clip": "DOWN-RIGHT",
       "frame": 74
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00075.jpg",
-      "gx": 0.7708333333333334,
-      "gy": -0.22916666666666663,
+      "gx": 0.7789473684210526,
+      "gy": -0.2210526315789474,
       "clip": "DOWN-RIGHT",
       "frame": 75
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00076.jpg",
-      "gx": 0.78125,
-      "gy": -0.21875,
+      "gx": 0.7894736842105263,
+      "gy": -0.21052631578947367,
       "clip": "DOWN-RIGHT",
       "frame": 76
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00077.jpg",
-      "gx": 0.7916666666666666,
-      "gy": -0.20833333333333337,
+      "gx": 0.8,
+      "gy": -0.19999999999999996,
       "clip": "DOWN-RIGHT",
       "frame": 77
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00078.jpg",
-      "gx": 0.8020833333333334,
-      "gy": -0.19791666666666663,
+      "gx": 0.8105263157894737,
+      "gy": -0.18947368421052635,
       "clip": "DOWN-RIGHT",
       "frame": 78
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00079.jpg",
-      "gx": 0.8125,
-      "gy": -0.1875,
+      "gx": 0.8210526315789474,
+      "gy": -0.17894736842105263,
       "clip": "DOWN-RIGHT",
       "frame": 79
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00080.jpg",
-      "gx": 0.8229166666666666,
-      "gy": -0.17708333333333337,
+      "gx": 0.8315789473684211,
+      "gy": -0.16842105263157892,
       "clip": "DOWN-RIGHT",
       "frame": 80
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00081.jpg",
-      "gx": 0.8333333333333334,
-      "gy": -0.16666666666666663,
+      "gx": 0.8421052631578947,
+      "gy": -0.1578947368421053,
       "clip": "DOWN-RIGHT",
       "frame": 81
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00082.jpg",
-      "gx": 0.84375,
-      "gy": -0.15625,
+      "gx": 0.8526315789473684,
+      "gy": -0.1473684210526316,
       "clip": "DOWN-RIGHT",
       "frame": 82
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00083.jpg",
-      "gx": 0.8541666666666666,
-      "gy": -0.14583333333333337,
+      "gx": 0.8631578947368421,
+      "gy": -0.13684210526315788,
       "clip": "DOWN-RIGHT",
       "frame": 83
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00084.jpg",
-      "gx": 0.8645833333333334,
-      "gy": -0.13541666666666663,
+      "gx": 0.8736842105263158,
+      "gy": -0.12631578947368416,
       "clip": "DOWN-RIGHT",
       "frame": 84
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00085.jpg",
-      "gx": 0.875,
-      "gy": -0.125,
+      "gx": 0.8842105263157894,
+      "gy": -0.11578947368421055,
       "clip": "DOWN-RIGHT",
       "frame": 85
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00086.jpg",
-      "gx": 0.8854166666666666,
-      "gy": -0.11458333333333337,
+      "gx": 0.8947368421052632,
+      "gy": -0.10526315789473684,
       "clip": "DOWN-RIGHT",
       "frame": 86
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00087.jpg",
-      "gx": 0.8958333333333334,
-      "gy": -0.10416666666666663,
+      "gx": 0.9052631578947369,
+      "gy": -0.09473684210526312,
       "clip": "DOWN-RIGHT",
       "frame": 87
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00088.jpg",
-      "gx": 0.90625,
-      "gy": -0.09375,
+      "gx": 0.9157894736842105,
+      "gy": -0.08421052631578951,
       "clip": "DOWN-RIGHT",
       "frame": 88
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00089.jpg",
-      "gx": 0.9166666666666666,
-      "gy": -0.08333333333333337,
+      "gx": 0.9263157894736842,
+      "gy": -0.0736842105263158,
       "clip": "DOWN-RIGHT",
       "frame": 89
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00090.jpg",
-      "gx": 0.9270833333333334,
-      "gy": -0.07291666666666663,
+      "gx": 0.9368421052631579,
+      "gy": -0.06315789473684208,
       "clip": "DOWN-RIGHT",
       "frame": 90
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00091.jpg",
-      "gx": 0.9375,
-      "gy": -0.0625,
+      "gx": 0.9473684210526315,
+      "gy": -0.052631578947368474,
       "clip": "DOWN-RIGHT",
       "frame": 91
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00092.jpg",
-      "gx": 0.9479166666666666,
-      "gy": -0.05208333333333337,
+      "gx": 0.9578947368421052,
+      "gy": -0.04210526315789476,
       "clip": "DOWN-RIGHT",
       "frame": 92
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00093.jpg",
-      "gx": 0.9583333333333334,
-      "gy": -0.04166666666666663,
+      "gx": 0.968421052631579,
+      "gy": -0.03157894736842104,
       "clip": "DOWN-RIGHT",
       "frame": 93
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00094.jpg",
-      "gx": 0.96875,
-      "gy": -0.03125,
+      "gx": 0.9789473684210527,
+      "gy": -0.021052631578947323,
       "clip": "DOWN-RIGHT",
       "frame": 94
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00095.jpg",
-      "gx": 0.9791666666666666,
-      "gy": -0.02083333333333337,
+      "gx": 0.9894736842105263,
+      "gy": -0.010526315789473717,
       "clip": "DOWN-RIGHT",
       "frame": 95
     },
     {
       "path": "frames/out/DOWN-RIGHT/frame_00096.jpg",
-      "gx": 0.9895833333333334,
-      "gy": -0.01041666666666663,
-      "clip": "DOWN-RIGHT",
-      "frame": 96
-    },
-    {
-      "path": "frames/out/DOWN-RIGHT/frame_00097.jpg",
       "gx": 1,
       "gy": 0,
       "clip": "DOWN-RIGHT",
-      "frame": 97
+      "frame": 96
     },
     {
       "path": "frames/out/DOWN-RIGHT__REV/frame_00001.jpg",

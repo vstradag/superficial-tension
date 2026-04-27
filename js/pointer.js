@@ -59,6 +59,13 @@ export function createPointerState(opts = {}) {
       raw.x = x;
       raw.y = y;
     },
+    /** Freeze both targets at one position immediately. */
+    snap(x, y) {
+      raw.x = x;
+      raw.y = y;
+      smoothed.x = x;
+      smoothed.y = y;
+    },
     /** Portfolio-style soft settle after touch ends (handleTouchEnd). */
     scheduleTouchEndReset() {
       window.setTimeout(() => {
