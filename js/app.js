@@ -5,7 +5,7 @@ import { GazeCanvasRenderer } from "./renderGazeCanvas.js";
 /** Mirror X: screen-left matches subject's left gaze in frame (camera vs viewer). */
 const FLIP_GAZE_X = true;
 /** Short delay before freezing the last rendered gaze frame. */
-const IDLE_HOLD_MS = 140;
+const IDLE_HOLD_MS = 220;
 
 /**
  * Browsers require a user gesture; call from click only.
@@ -165,7 +165,9 @@ export async function mountEyeGaze(root, options = {}) {
   let lastRawX = 0;
   let lastRawY = 0;
   /** Ignore tiny mouse jitter so idle can reliably engage. */
-  const MOVE_EPS = 0.008;
+  const MOVE_EPS = 0.003;
+  /** Let smoothing finish before treating the scene as fully idle. */
+  const SETTLE_EPS = 0.0025;
 
   const onPointerClient = (/** @type {number} */ cx, /** @type {number} */ cy) => {
     const rect = root.getBoundingClientRect();
@@ -231,7 +233,10 @@ export async function mountEyeGaze(root, options = {}) {
   const loop = () => {
     rafId = window.requestAnimationFrame(loop);
     const idle = performance.now() - lastMoveAt > IDLE_HOLD_MS;
-    if (idle) {
+    const settled =
+      Math.abs(pointer.smoothed.x - pointer.raw.x) < SETTLE_EPS &&
+      Math.abs(pointer.smoothed.y - pointer.raw.y) < SETTLE_EPS;
+    if (idle && settled) {
       // Hold the exact frame that was last rendered when movement stopped.
       return;
     }

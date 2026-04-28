@@ -9,6 +9,8 @@ export class ImageLRU {
     this.maxEntries = opts.maxEntries ?? 56;
     /** @type {Map<string, HTMLImageElement>} */
     this.map = new Map();
+    /** @type {Map<string, Promise<HTMLImageElement>>} */
+    this.pending = new Map();
   }
 
   /**
@@ -23,18 +25,27 @@ export class ImageLRU {
       this.map.set(path, hit);
       return Promise.resolve(hit);
     }
+    const inflight = this.pending.get(path);
+    if (inflight) {
+      return inflight;
+    }
 
-    return new Promise((resolve, reject) => {
+    const request = new Promise((resolve, reject) => {
       const img = new Image();
       img.decoding = "async";
       img.onload = () => {
+        this.pending.delete(path);
         this._insert(path, img);
         resolve(img);
       };
-      img.onerror = () =>
+      img.onerror = () => {
+        this.pending.delete(path);
         reject(new Error(`Failed to load image: ${resolvedUrl}`));
+      };
       img.src = resolvedUrl;
     });
+    this.pending.set(path, request);
+    return request;
   }
 
   /**

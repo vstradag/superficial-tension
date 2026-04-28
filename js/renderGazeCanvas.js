@@ -33,6 +33,17 @@ function drawWeightedBlend(ctx, lw, lh, layers) {
 }
 
 /**
+ * @param {{ img: HTMLImageElement, weight: number }[]} layers
+ */
+function normalizeLayerWeights(layers) {
+  const total = layers.reduce((sum, layer) => sum + layer.weight, 0) || 1;
+  return layers.map((layer) => ({
+    img: layer.img,
+    weight: layer.weight / total,
+  }));
+}
+
+/**
  * @param {CanvasImageSource} media
  * @returns {{ width: number, height: number } | null}
  */
@@ -119,8 +130,8 @@ export class GazeCanvasRenderer {
     this.k = opts.k ?? 4;
     this.deadZone = opts.deadZone ?? 0.08;
     /** Lower = slower cross-fade between neighbor sets (less strobing when the pointer moves). */
-    this.blendLerp = opts.blendLerp ?? 0.12;
-    this.cache = new ImageLRU({ maxEntries: opts.cacheSize ?? 56 });
+    this.blendLerp = opts.blendLerp ?? 0.22;
+    this.cache = new ImageLRU({ maxEntries: opts.cacheSize ?? 96 });
 
     /** @type {{ entry: FrameEntry, weight: number }[]} */
     this.blendState = [];
@@ -137,11 +148,21 @@ export class GazeCanvasRenderer {
       this.frames,
       0,
       0,
-      Math.min(12, this.frames.length)
+      Math.min(20, this.frames.length)
     ).map((x) => x.entry.path);
     const paths = [neutralEntry.path, ...near];
     await preloadPaths(paths, this.resolveUrl, this.cache);
     this.ready = true;
+  }
+
+  /**
+   * @param {FrameEntry[]} entries
+   */
+  primeEntries(entries) {
+    for (const entry of entries) {
+      if (!entry || this.cache.getLoaded(entry.path)) continue;
+      this.cache.load(entry.path, this.resolveUrl(entry.path)).catch(() => {});
+    }
   }
 
   /**
@@ -152,11 +173,19 @@ export class GazeCanvasRenderer {
     if (!this.ready) return;
     const { x: tx, y: ty } = applyDeadZone(sx, sy, this.deadZone);
     if (this.k <= 1) {
-      const nearest = findKNearest(this.frames, tx, ty, 1)[0];
+      const nearestMatches = findKNearest(this.frames, tx, ty, Math.min(6, this.frames.length));
+      const nearest = nearestMatches[0];
       if (!nearest) return;
+      this.primeEntries(nearestMatches.map(({ entry }) => entry));
       const exact = this.cache.getLoaded(nearest.entry.path);
       if (!exact) {
-        this.cache.load(nearest.entry.path, this.resolveUrl(nearest.entry.path)).catch(() => {});
+        const fallback = nearestMatches
+          .map(({ entry }) => entry)
+          .find((entry) => this.cache.getLoaded(entry.path));
+        if (fallback) {
+          this.blendState = [{ entry: fallback, weight: 1 }];
+          this.drawSingleFrame(fallback);
+        }
         return;
       }
       this.blendState = [{ entry: nearest.entry, weight: 1 }];
@@ -166,6 +195,7 @@ export class GazeCanvasRenderer {
     const neigh = findKNearest(this.frames, tx, ty, this.k);
     const weighted = idwWeights(neigh);
     const target = weighted.map(({ entry, weight }) => ({ entry, weight }));
+    this.primeEntries(neigh.map(({ entry }) => entry));
     if (this.blendState.length === 0 && target.length) {
       this.blendState = target.map((x) => ({
         entry: x.entry,
@@ -178,20 +208,16 @@ export class GazeCanvasRenderer {
     const lw = this.logicalW;
     const lh = this.logicalH;
     const layers = [];
-    let missing = false;
     for (const { entry, weight } of this.blendState) {
       if (weight < 0.002) continue;
       const img = this.cache.getLoaded(entry.path);
       if (!img) {
-        this.cache.load(entry.path, this.resolveUrl(entry.path)).catch(() => {});
-        missing = true;
         continue;
       }
       layers.push({ img, weight });
     }
     if (layers.length === 0) return;
-    // Additive "lighter" blend: skipping a layer collapses total energy → visible flash. Keep last frame.
-    if (missing) return;
+    const normalizedLayers = normalizeLayerWeights(layers);
 
     const dpr = Math.min(2, window.devicePixelRatio || 1);
     if (
@@ -202,7 +228,7 @@ export class GazeCanvasRenderer {
       this._composite.height = this.canvas.height;
     }
     this._cctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    drawWeightedBlend(this._cctx, lw, lh, layers);
+    drawWeightedBlend(this._cctx, lw, lh, normalizedLayers);
     this.ctx.setTransform(1, 0, 0, 1, 0, 0);
     this.ctx.drawImage(this._composite, 0, 0);
   }

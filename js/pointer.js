@@ -39,9 +39,13 @@ export function handleTouchMove(event, rect) {
 export function createPointerState(opts = {}) {
   const raw = { x: 0, y: 0 };
   const smoothed = { x: 0, y: 0 };
+  const defaultInterpolation = {
+    x: opts.interpolationX ?? 0.2,
+    y: opts.interpolationY ?? 0.22,
+  };
   let interpolation = {
-    x: opts.interpolationX ?? 0.09,
-    y: opts.interpolationY ?? 0.11,
+    x: defaultInterpolation.x,
+    y: defaultInterpolation.y,
   };
 
   return {
@@ -71,11 +75,11 @@ export function createPointerState(opts = {}) {
       window.setTimeout(() => {
         raw.x = 0;
         raw.y = 0;
-        interpolation = { x: 0.04, y: 0.04 };
+        interpolation = { x: 0.08, y: 0.08 };
         window.setTimeout(() => {
           interpolation = {
-            x: opts.interpolationX ?? 0.09,
-            y: opts.interpolationY ?? 0.11,
+            x: defaultInterpolation.x,
+            y: defaultInterpolation.y,
           };
         }, 1000);
       }, 2000);
