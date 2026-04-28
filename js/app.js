@@ -1,11 +1,155 @@
 import { createPointerState, normalizeToRect } from "./pointer.js";
-import { findNearestToOrigin } from "./gazeFrames.js";
+import { findKNearest, findNearestToOrigin } from "./gazeFrames.js";
 import { GazeCanvasRenderer } from "./renderGazeCanvas.js";
 
 /** Mirror X: screen-left matches subject's left gaze in frame (camera vs viewer). */
 const FLIP_GAZE_X = true;
 /** Short delay before freezing the last rendered gaze frame. */
 const IDLE_HOLD_MS = 220;
+const INTRO_MIN_LOAD_MS = 1400;
+const INTRO_PROGRESS_LOAD_SHARE = 0.92;
+
+function animateValue(from, to, duration, onUpdate) {
+  const safeDuration = Math.max(1, duration);
+  return new Promise((resolve) => {
+    const start = performance.now();
+    const tick = (now) => {
+      const t = Math.min(1, (now - start) / safeDuration);
+      onUpdate(from + (to - from) * t);
+      if (t < 1) {
+        requestAnimationFrame(tick);
+      } else {
+        resolve();
+      }
+    };
+    requestAnimationFrame(tick);
+  });
+}
+
+function createIntroController(root) {
+  const introEl = root.querySelector("[data-eye-gaze-intro]");
+  const startBtn = root.querySelector("[data-eye-gaze-start]");
+  if (!(introEl instanceof HTMLElement) || !(startBtn instanceof HTMLButtonElement)) {
+    return null;
+  }
+  const hintEl = introEl.querySelector("[data-eye-gaze-hint]");
+  const progressEl = introEl.querySelector("[data-eye-gaze-progress]");
+  const progressBarEl = introEl.querySelector("[data-eye-gaze-progress-bar]");
+  const progressCopyEl = introEl.querySelector("[data-eye-gaze-progress-copy]");
+  const markStateEl = introEl.querySelector("[data-eye-gaze-mark-state]");
+
+  let currentProgress = 0;
+  const setProgress = (nextProgress, label = "Loading gaze frames") => {
+    currentProgress = Math.max(0, Math.min(1, nextProgress));
+    const percent = Math.round(currentProgress * 100);
+    if (progressBarEl instanceof HTMLElement) {
+      progressBarEl.style.width = `${percent}%`;
+    }
+    if (progressEl instanceof HTMLElement) {
+      progressEl.setAttribute("aria-valuenow", String(percent));
+    }
+    if (progressCopyEl instanceof HTMLElement) {
+      progressCopyEl.textContent = `${label}... ${percent}%`;
+    }
+  };
+
+  startBtn.disabled = true;
+  introEl.classList.remove("is-ready");
+  setProgress(0);
+
+  return {
+    introEl,
+    startBtn,
+    get progress() {
+      return currentProgress;
+    },
+    setLoading() {
+      if (hintEl instanceof HTMLElement) {
+        hintEl.textContent =
+          "Loading interaction. The tickling point unlocks at 100%.";
+      }
+      if (markStateEl instanceof HTMLElement) {
+        markStateEl.textContent = "Loading";
+      }
+      startBtn.disabled = true;
+      introEl.classList.remove("is-ready");
+    },
+    setProgress,
+    async finishLoading(minDurationMs) {
+      if (minDurationMs > 0) {
+        await animateValue(
+          currentProgress,
+          1,
+          minDurationMs,
+          (value) => setProgress(value)
+        );
+      } else {
+        setProgress(1);
+      }
+      if (hintEl instanceof HTMLElement) {
+        hintEl.textContent = "Loaded. Click the tickling point to start.";
+      }
+      if (progressCopyEl instanceof HTMLElement) {
+        progressCopyEl.textContent = "Loading complete. Interaction unlocked.";
+      }
+      if (markStateEl instanceof HTMLElement) {
+        markStateEl.textContent = "Ready";
+      }
+      startBtn.disabled = false;
+      introEl.classList.add("is-ready");
+    },
+  };
+}
+
+function buildWarmupPaths(frames, neutralEntry) {
+  const targets = [
+    { x: 0, y: 0, k: 28 },
+    { x: 0.22, y: 0, k: 18 },
+    { x: -0.22, y: 0, k: 18 },
+    { x: 0, y: 0.2, k: 18 },
+    { x: 0, y: -0.2, k: 18 },
+    { x: 0.45, y: 0.12, k: 14 },
+    { x: -0.45, y: 0.12, k: 14 },
+    { x: 0.45, y: -0.12, k: 14 },
+    { x: -0.45, y: -0.12, k: 14 },
+    { x: 0.68, y: 0, k: 12 },
+    { x: -0.68, y: 0, k: 12 },
+    { x: 0, y: 0.5, k: 12 },
+    { x: 0, y: -0.5, k: 12 },
+  ];
+  const paths = new Set([neutralEntry.path]);
+  for (const target of targets) {
+    const nearest = findKNearest(frames, target.x, target.y, Math.min(target.k, frames.length));
+    for (const { entry } of nearest) {
+      paths.add(entry.path);
+    }
+  }
+  return [...paths];
+}
+
+async function warmupIntroAssets(renderer, frames, neutralEntry, resolveUrl, introUi) {
+  const warmupPaths = buildWarmupPaths(frames, neutralEntry);
+  const startedAt = performance.now();
+  introUi?.setLoading();
+
+  let completed = 0;
+  const total = Math.max(1, warmupPaths.length);
+  await Promise.all(
+    warmupPaths.map((path) =>
+      renderer.cache
+        .load(path, resolveUrl(path))
+        .catch(() => null)
+        .finally(() => {
+          completed += 1;
+          introUi?.setProgress((completed / total) * INTRO_PROGRESS_LOAD_SHARE);
+        })
+    )
+  );
+
+  renderer.ready = true;
+  const remaining = INTRO_MIN_LOAD_MS - (performance.now() - startedAt);
+  await introUi?.finishLoading(Math.max(0, remaining));
+}
 
 /**
  * Browsers require a user gesture; call from click only.
@@ -121,6 +265,7 @@ export async function mountEyeGaze(root, options = {}) {
   const resolveUrl = (path) => new URL(path, assetBase).href;
 
   const neutral = findNearestToOrigin(frames);
+  const introUi = createIntroController(root);
 
   const renderer = new GazeCanvasRenderer({
     canvas,
@@ -135,7 +280,7 @@ export async function mountEyeGaze(root, options = {}) {
   fit();
 
   if (reduced) {
-    await renderer.bootstrap(neutral);
+    await warmupIntroAssets(renderer, frames, neutral, resolveUrl, introUi);
     fit();
     await waitForIntroDismiss(root, fit, options);
     renderer.drawSingleFrame(neutral);
@@ -149,7 +294,7 @@ export async function mountEyeGaze(root, options = {}) {
     };
   }
 
-  await renderer.bootstrap(neutral);
+  await warmupIntroAssets(renderer, frames, neutral, resolveUrl, introUi);
 
   /** Nose calibration: gaze (0,0) at screen center after start click + fullscreen. */
   const { calX, calY } = await waitForIntroDismiss(root, fit, options);
